@@ -15,7 +15,8 @@
   .content_scene_cat span.category-name {
     font: 600 42px/51px "Open Sans", sans-serif;
     color: #fff;
-    margin-bottom: 12px; }
+    margin-bottom: 12px; 
+  }
     @media (max-width: 1199px) {
       .content_scene_cat span.category-name {
         font-size: 25px;
@@ -65,7 +66,9 @@
       #subcategories ul li .subcategory-name {
         font: 600 18px/22px "Open Sans", sans-serif;
         color: #555454;
-        text-transform: uppercase; }
+        text-transform: uppercase; 
+        white-space: normal;
+      }
         #subcategories ul li .subcategory-name:hover {
           color: #515151; }
       #subcategories ul li .cat_desc {
