@@ -1,0 +1,1223 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"contain",
+				"contain"
+			],
+			[
+				"con",
+				"contain"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"pla",
+				"placeholder	(authentication.tpl)"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margin-to",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"place",
+				"placeholder"
+			],
+			[
+				"login",
+				"logincontainer	(global.css)"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"_I",
+				"_THEME_IMG_DIR_	(FrontController.php)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "themes/socialdog/header.tpl",
+			"settings":
+			{
+				"buffer_size": 8124,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/socialdog/index.tpl",
+			"settings":
+			{
+				"buffer_size": 474,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/socialdog/footer.tpl",
+			"settings":
+			{
+				"buffer_size": 766,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/socialdog/authentication.tpl",
+			"settings":
+			{
+				"buffer_size": 37155,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/socialdog/css/authentication.css",
+			"settings":
+			{
+				"buffer_size": 978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/socialdog/js/authentication.js",
+			"settings":
+			{
+				"buffer_size": 1986,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controllers/front/AuthController.php",
+			"settings":
+			{
+				"buffer_size": 34292,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/socialdog/cms.tpl",
+			"settings":
+			{
+				"buffer_size": 4951,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controllers/front/CmsController.php",
+			"settings":
+			{
+				"buffer_size": 5001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/socialdog/css/global.css",
+			"settings":
+			{
+				"buffer_size": 18219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/socialdog/css/bootstrap/bootstrap-theme.css",
+			"settings":
+			{
+				"buffer_size": 26132,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "packe",
+		"selected_items":
+		[
+			[
+				"packe",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"Pa",
+				"Package Control: List Packages"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"oacka",
+				"Package Control: Install Package"
+			],
+			[
+				"git ",
+				"Git: Commit history"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 190.0,
+		"history":
+		[
+			"restart",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jpodracky/_WWW/dogs",
+		"/Users/jpodracky/_WWW/dogs/themes",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/css",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css"
+	],
+	"file_history":
+	[
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css/modules/blocktopmenu/css/superfish-modified.css",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/css/global.css",
+		"/Users/jpodracky/_WWW/dogs/classes/CMS.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css/bootstrap/bootstrap.css",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css/cms.css",
+		"/Users/jpodracky/_WWW/dogs/admindog/themes/default/template/controllers/modules/login_addons.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/global.tpl",
+		"/Users/jpodracky/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css/modules/blocktopmenu/css/blocktopmenu.css",
+		"/Users/jpodracky/_WWW/dogs/modules/blocktopmenu/css/blocktopmenu.css",
+		"/Users/jpodracky/_WWW/dogs/config/defines_uri.inc.php",
+		"/Users/jpodracky/_WWW/dogs/classes/ObjectModel.php",
+		"/Users/jpodracky/_WWW/dogs/classes/Cart.php",
+		"/Users/jpodracky/_WWW/dogs/classes/AddressFormat.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/admin/AdminCmsController.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/admin/AdminCmsContentController.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blockcms/blockcms.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blockcms/BlockCMSModel.php",
+		"/Users/jpodracky/_WWW/dogs/classes/CMSCategory.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/front/CmsController.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blockpermanentlinks/blockpermanentlinks.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/modules/blocktopmenu/blocktopmenu.tpl",
+		"/Users/jpodracky/_WWW/dogs/classes/controller/FrontController.php",
+		"/Users/jpodracky/_WWW/dogs/classes/Tools.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css/authentication.css",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/authentication.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/blockcmsinfo/blockcmsinfo.tpl",
+		"/Users/jpodracky/_WWW/dogs/cache/class_index.php",
+		"/Users/jpodracky/_WWW/dogs/classes/PrestaShopAutoload.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/front/GetFileController.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/admin/AdminMetaController.php",
+		"/Users/jpodracky/_WWW/dogs/classes/Hook.php",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/authentication.tpl",
+		"/Users/jpodracky/_WWW/dogs/admindog/themes/default/template/controllers/modules_positions/form.tpl",
+		"/Users/jpodracky/_WWW/dogs/classes/module/Module.php",
+		"/Users/jpodracky/_WWW/dogs/classes/Dispatcher.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/admin/AdminModulesPositionsController.php",
+		"/Users/jpodracky/_WWW/dogs/classes/cache/Cache.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/front/ChangeCurrencyController.php",
+		"/Users/jpodracky/_WWW/dogs/classes/Meta.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/admin/AdminThemesController.php",
+		"/Users/jpodracky/_WWW/dogs/classes/Theme.php",
+		"/Users/jpodracky/_WWW/dogs/modules/statsregistrations/statsregistrations.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/front/PasswordController.php",
+		"/Users/jpodracky/_WWW/dogs/config/xml/themes/default.xml",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/config.xml",
+		"/Users/jpodracky/_WWW/dogs/js/validate.js",
+		"/Users/jpodracky/_WWW/dogs/modules/blockuserinfo/nav.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/blockuserinfo/blockuserinfo.php",
+		"/Users/jpodracky/_WWW/dogs/controllers/front/IndexController.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blockwishlist/blockwishlist.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/modules/blockwishlist/my-account.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/modules/blockcms/blockcms.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/js/global.js",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/global.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/blockcart/blockcart.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blockbanner/blockbanner.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css/modules/blockbanner/blockbanner.css",
+		"/Users/jpodracky/_WWW/dogs/modules/blockbanner/blockbanner.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/blocktopmenu/blocktopmenu.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blocktopmenu/js/superfish-modified.js",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/modules/blocktopmenu/blocktopmenu.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/blocktopmenu/css/superfish-modified.css",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/css/modules/blocktopmenu/css/superfish-modified.css",
+		"/Users/jpodracky/_WWW/dogs/classes/shop/Shop.php",
+		"/Users/jpodracky/_WWW/dogs/classes/helper/Helper.php",
+		"/Users/jpodracky/_WWW/dogs/Adapter/Adapter_HookManager.php",
+		"/Users/jpodracky/_WWW/dogs/modules/themeconfigurator/themeconfigurator.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/index.tpl",
+		"/Users/jpodracky/_WWW/dogs/init.php",
+		"/Users/jpodracky/_WWW/dogs/modules/themeconfigurator/views/templates/hook/hook.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/modules/blocksearch/blocksearch.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/blocksearch/blocksearch.css",
+		"/Users/jpodracky/_WWW/dogs/modules/blocksearch/blocksearch.php",
+		"/Users/jpodracky/_WWW/dogs/classes/controller/Controller.php",
+		"/Users/jpodracky/_WWW/dogs/config/config.inc.php",
+		"/Users/jpodracky/_WWW/dogs/config/smarty.config.inc.php",
+		"/Users/jpodracky/_WWW/dogs/header.php",
+		"/Users/jpodracky/_WWW/dogs/index.php",
+		"/Users/jpodracky/_WWW/dogs/themes/index.php",
+		"/Users/jpodracky/_WWW/dogs/config/defines.inc.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/index.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css/bootstrap/bootstrap-theme.css",
+		"/Users/jpodracky/_WWW/dogs/modules/blockpermanentlinks/blockpermanentlinks.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blockpermanentlinks/blockpermanentlinks-header.tpl",
+		"/Users/jpodracky/_WWW/dogs/controllers/front/OrderOpcController.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blockcontact/blockcontact.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/MainPage.html",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/css/global.css",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/Main.css",
+		"/Users/jpodracky/_WWW/dogs/admindog/header.inc.php",
+		"/Users/jpodracky/_WWW/dogs/themes/socialdog/layout.tpl",
+		"/Users/jpodracky/_WWW/dogs/classes/Media.php",
+		"/Users/jpodracky/_WWW/dogs/modules/blockwishlist/js/ajax-wishlist.js",
+		"/Users/jpodracky/_WWW/dogs/classes/Upgrader.php",
+		"/Users/jpodracky/_WWW/dogs/admindog/functions.php",
+		"/Users/jpodracky/_WWW/dogs/modules/homeslider/views/templates/hook/homeslider.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/productcomments/productcomments-extra.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/productcomments/productcomments_reviews.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/sendtoafriend/product_page.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/sendtoafriend/sendtoafriend-extra.tpl",
+		"/Users/jpodracky/_WWW/dogs/modules/sendtoafriend/sendtoafriend.tpl",
+		"/Users/jpodracky/_WWW/dogs/pdf/supply-order-footer.tpl",
+		"/Users/jpodracky/_WWW/dogs/pdf/supply-order-header.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/category-count.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/layout.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/modules/homeslider/homeslider.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/modules/mailalerts/views/templates/hook/product.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/modules/productcomments/productcomments-extra.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/modules/productcomments/productcomments_reviews.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/modules/sendtoafriend/sendtoafriend-extra.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/nbr-product-page.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/order-address-multishipping-products.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/order-address-multishipping.tpl",
+		"/Users/jpodracky/_WWW/dogs/themes/default-bootstrap/order-address-product-line.tpl",
+		"/Users/jpodracky/_WWW/dogs/admindog/themes/default/template/helpers/options/index.php",
+		"/Users/jpodracky/_WWW/dogs/classes/order/Order.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/classes/CronJobsForms.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/classes/index.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/controllers/admin/AdminCronJobsController.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/controllers/admin/index.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/controllers/front/callback.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/controllers/front/index.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/controllers/index.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/cronjobs.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/css/index.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/index.php",
+		"/Users/jpodracky/_WWW/dogs/modules/cronjobs/translations/index.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/,*.css",
+			"/Users/jpodracky/_WWW/dogs/,",
+			"/Users/jpodracky/_WWW/dogs/,*.css",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/,*.css",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/,*.css",
+			"/Users/jpodracky/_WWW/dogs/,*.php",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/,*.php",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/,*.php",
+			"/Users/jpodracky/_WWW/dogs/,*php",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/,*.js",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/admindog/",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/,*.css",
+			"/Users/jpodracky/_WWW/dogs/admindog/",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/admindog/",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/admin377occ40l/",
+			"/Users/jpodracky/_WWW/dogs/admin377occ40I/",
+			"/Users/jpodracky/_WWW/dogs/",
+			"/Users/jpodracky/_WWW/dogs/,*.php",
+			"/Users/jpodracky/_WWW/dogs/admin377occ40l/,*.tpl",
+			"/Users/jpodracky/_WWW/dogs/admin377occ40l/,*.php",
+			",*.php,/Users/jpodracky/_WWW/dogs/admin377occ40l",
+			"<open folders>,*.php",
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"PS_REGISTRATION_PROCESS",
+			"add co",
+			"form_con",
+			"form-con",
+			"form-control",
+			"text",
+			"form",
+			"colu",
+			"h1",
+			"opacity",
+			"alp",
+			"opaci",
+			"div is=\"cms\"",
+			"cms",
+			"center",
+			"list-g",
+			"list-group",
+			"bull",
+			"list-group",
+			"list-gro",
+			".bullet",
+			"bullet",
+			"buller",
+			"bul",
+			"'date_upd'",
+			"'date_add'",
+			"add",
+			"date_add",
+			"add",
+			"insert",
+			"cms",
+			"addcms",
+			"addcm",
+			"addcms",
+			"insert",
+			"getCMSPages",
+			"getCMSPages\n",
+			"getCMSPages\ngetCMSPages",
+			"getCMSPages",
+			"getSubCategories",
+			"cms_category",
+			"cms",
+			"bulle",
+			"initCon",
+			"sub_category",
+			"rte",
+			".rte",
+			"box",
+			"cms-block",
+			"subcategories",
+			"global",
+			"bg-w",
+			"bg-",
+			"back",
+			"white",
+			"columns",
+			"#columns",
+			"columns",
+			"container",
+			"center_column",
+			"page",
+			"cms.tpl",
+			"radio",
+			"radio-inli",
+			".top",
+			"account-creation_form",
+			"300px",
+			".account_creation",
+			"account_creation",
+			"authentica",
+			"account_creation",
+			"authentica",
+			".std",
+			"authe",
+			".account_creation",
+			"HOOK_CREATE_ACCOUNT_TOP",
+			".exclusive",
+			"processSubmitCreate",
+			"SubmitCreate",
+			"processSubmitCreate",
+			"getValue('ema",
+			"postProcess",
+			"processSubmitAccount",
+			"init",
+			"create_account",
+			"create_acc",
+			"isSub",
+			"processSubmitAccoun",
+			"processSubmitAccount\nprocessSubmitAccount",
+			"processSubmitAccount",
+			"create",
+			"$email_create",
+			"account-creation",
+			"id=\"opc_createAccount\"",
+			"regist",
+			"PS_REGISTRATION_PROCESS_TYPE",
+			"show",
+			"submitAccount",
+			"form_content",
+			".form_content",
+			".submit",
+			"submit",
+			"form_content",
+			"form-error",
+			"text-align: start",
+			"text-align: stra",
+			"text-align: star",
+			".submit",
+			"submit",
+			".box",
+			"box",
+			"form_content",
+			"form-content",
+			"important",
+			"display",
+			"display-",
+			"display",
+			"form-group",
+			"center",
+			".form-control",
+			"page-subheading",
+			"page-sub",
+			"account_input",
+			"form-control",
+			"account_input",
+			"form_content",
+			"col-sx-12",
+			"col-sm"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"{*\n *  2015-2016 DOGS\n *  @author J.Podracky, L.Fisher\n *  @copyright  2015-2016 F2FCREATIVE\n *}",
+			"/*\n *  2015-2016 DOGS\n *  @author J.Podracky, L.Fisher\n *  @copyright  2015-2016 F2FCREATIVE\n */",
+			"{*\n *  2015-2016 DOGS\n *  @author J.Podracky, L.Fisher\n *  @copyright  2015-2016 F2FCREATIVE\n *}",
+			"/*\n *  2015-2016 DOGS\n *  @author J.Podracky, L.Fisher\n *  @copyright  2015-2016 F2FCREATIVE\n */",
+			"{*\n *  2015-2016 DOGS\n *  @author J.Podracky, L.Fisher\n *  @copyright  2015-2016 F2FCREATIVE\n *}",
+			"/*\n *  2015-2016 DOGS\n *  @author J.Podracky, L.Fisher\n *  @copyright  2015-2016 F2FCREATIVE\n */",
+			"{*\n *  2015-2016 DOGS\n *  @author J.Podracky, L.Fisher\n *  @copyright  2015-2016 F2FCREATIVE\n *}",
+			"/*\n *  2015-2016 DOGS\n *  @author J.Podracky, L.Fisher\n *  @copyright  2015-2016 F2FCREATIVE\n */"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "themes/socialdog/header.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6748,
+								6748
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1309.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "themes/socialdog/index.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								452,
+								461
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "themes/socialdog/footer.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								766,
+								766
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "themes/socialdog/authentication.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5631,
+								5648
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1342.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "themes/socialdog/css/authentication.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "themes/socialdog/js/authentication.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								231,
+								231
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "controllers/front/AuthController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15998,
+								16021
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5768.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "themes/socialdog/cms.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1142,
+								1142
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1006.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "controllers/front/CmsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1702,
+								1717
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1014.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "themes/socialdog/css/global.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3889,
+								3889
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "themes/socialdog/css/bootstrap/bootstrap-theme.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								644,
+								644
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 655.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dogs.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"superfish",
+				"themes/socialdog/css/modules/blocktopmenu/css/superfish-modified.css"
+			],
+			[
+				"superfis",
+				"themes/socialdog/css/modules/blocktopmenu/css/superfish-modified.css"
+			],
+			[
+				"cms.php",
+				"classes/CMS.php"
+			],
+			[
+				"login.t",
+				"admindog/themes/default/template/controllers/modules/login_addons.tpl"
+			],
+			[
+				"global.css",
+				"themes/default-bootstrap/css/global.css"
+			],
+			[
+				"global",
+				"themes/default-bootstrap/global.tpl"
+			],
+			[
+				"topmen",
+				"themes/socialdog/css/modules/blocktopmenu/css/blocktopmenu.css"
+			],
+			[
+				"topme",
+				"modules/blocktopmenu/css/blocktopmenu.css"
+			],
+			[
+				"define",
+				"config/defines_uri.inc.php"
+			],
+			[
+				"cms.css",
+				"themes/socialdog/css/cms.css"
+			],
+			[
+				"objec",
+				"classes/ObjectModel.php"
+			],
+			[
+				"obje",
+				"classes/ObjectModel.php"
+			],
+			[
+				"cms.ph",
+				"classes/CMS.php"
+			],
+			[
+				"admincmsc",
+				"controllers/admin/AdminCmsController.php"
+			],
+			[
+				"blockcms",
+				"modules/blockcms/blockcms.php"
+			],
+			[
+				"admincms",
+				"controllers/admin/AdminCmsContentController.php"
+			],
+			[
+				"cms",
+				"modules/blockcms/BlockCMSModel.php"
+			],
+			[
+				"blockpe",
+				"modules/blockpermanentlinks/blockpermanentlinks.tpl"
+			],
+			[
+				"blocktopmenu.css",
+				"themes/socialdog/css/modules/blocktopmenu/css/blocktopmenu.css"
+			],
+			[
+				"blocktopmenu",
+				"modules/blocktopmenu/css/blocktopmenu.css"
+			],
+			[
+				"blocktop",
+				"modules/blocktopmenu/css/blocktopmenu.css"
+			],
+			[
+				"front",
+				"classes/controller/FrontController.php"
+			],
+			[
+				"too",
+				"classes/Tools.php"
+			],
+			[
+				"dispa",
+				"classes/Dispatcher.php"
+			],
+			[
+				"hoo",
+				"classes/Hook.php"
+			],
+			[
+				"cache",
+				"classes/cache/Cache.php"
+			],
+			[
+				"module",
+				"classes/module/Module.php"
+			],
+			[
+				"tool",
+				"classes/Tools.php"
+			],
+			[
+				"hoop",
+				"classes/Hook.php"
+			],
+			[
+				"frontcon",
+				"classes/controller/FrontController.php"
+			],
+			[
+				"blockwis",
+				"modules/blockwishlist/blockwishlist.php"
+			],
+			[
+				"my-acco",
+				"themes/socialdog/modules/blockwishlist/my-account.tpl"
+			],
+			[
+				"mya",
+				"themes/socialdog/modules/blockwishlist/my-account.tpl"
+			],
+			[
+				"global.c",
+				"themes/default-bootstrap/css/global.css"
+			],
+			[
+				"global.",
+				"themes/socialdog/global.tpl"
+			],
+			[
+				"blockbanne",
+				"themes/socialdog/css/modules/blockbanner/blockbanner.css"
+			],
+			[
+				"block",
+				"modules/blockbanner/blockbanner.tpl"
+			],
+			[
+				"hook",
+				"classes/Hook.php"
+			],
+			[
+				"dashacti",
+				"modules/dashactivity/dashactivity.php"
+			],
+			[
+				"dashtren",
+				"modules/dashtrends/dashtrends.php"
+			],
+			[
+				"dash",
+				"modules/dashtrends/views/js/dashtrends.js"
+			],
+			[
+				"dashboa",
+				"modules/dashgoals/views/templates/hook/dashboard_zone_two.tpl"
+			],
+			[
+				"dashboard",
+				"modules/dashactivity/views/templates/hook/dashboard_zone_one.tpl"
+			],
+			[
+				"class/sett",
+				"class/settings.class.php"
+			],
+			[
+				"",
+				".htaccess"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
