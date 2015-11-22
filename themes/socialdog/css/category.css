@@ -2,19 +2,17 @@
 								Categories Page Styles
 ************************************************************************************************ */
 .content_scene_cat {
-  border-top: 5px solid #333;
-  color: #d7d7d7;
+  color: #363A41;
   line-height: 19px;
   margin: 0 0 26px 0; }
   .content_scene_cat .content_scene_cat_bg {
-    padding: 18px 10px 10px 42px;
-    background-color: #464646 !important; }
+    padding: 18px 10px 10px 0x; }
     @media (max-width: 1199px) {
       .content_scene_cat .content_scene_cat_bg {
-        padding: 10px 10px 10px 15px; } }
+        padding: 10px 10px 10px 0px; } }
   .content_scene_cat span.category-name {
     font: 600 42px/51px "Open Sans", sans-serif;
-    color: #fff;
+    color: #363A41;
     margin-bottom: 12px; }
     @media (max-width: 1199px) {
       .content_scene_cat span.category-name {
@@ -49,29 +47,41 @@
     margin: 0 0 0 -20px; }
     #subcategories ul li {
       float: left;
-      width: 145px;
-      margin: 0 0 13px 33px;
+      margin: 0 0 13px 0px;
       text-align: center;
-      height: 202px; }
-      #subcategories ul li .subcategory-image {
-        padding: 0 0 8px 0; }
-        #subcategories ul li .subcategory-image a {
-          display: block;
-          padding: 9px;
-          border: 1px solid #d6d4d4; }
-          #subcategories ul li .subcategory-image a img {
-            max-width: 100%;
-            vertical-align: top; }
+      height: 100%; }
+      #subcategories ul li .category-panel {
+        border: solid 1px #d3d8db;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        margin-top: 25px;
+        display: block;
+        background: #fff;
+        border-radius: 3px;}
+        #subcategories ul li .subcategory-image {
+          padding: 0 0 8px 0; }
+            #subcategories ul li .subcategory-image a {
+              display: block;
+              padding: 9px; }
+                #subcategories ul li .subcategory-image a img {
+                  max-width: 100%;
+                  width: 100%;
+                  height: 100%;
+                  vertical-align: top; }
       #subcategories ul li .subcategory-name {
         font: 600 18px/22px "Open Sans", sans-serif;
         color: #555454;
+        background: rgba(255,255,255,0.8);
+        padding-bottom: 7px;
+        padding-top: 7px;
+        position: relative;
+        margin-top: -36px;
         text-transform: uppercase; }
         #subcategories ul li .subcategory-name:hover {
+          transition: width 0.8ms;
           color: #515151; }
       #subcategories ul li .cat_desc {
         display: none; }
       #subcategories ul li:hover .subcategory-image a {
-        border: 5px solid #333;
-        padding: 5px; }
+        padding: 9px; }
 
 /*# sourceMappingURL=category.css.map */

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 15:11:44
+<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 21:57:06
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/authentication.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:149707082756507ba0d3b304-01706202%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:447004965650daa24cdfd6-66112397%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '149707082756507ba0d3b304-01706202',
+  'nocache_hash' => '447004965650daa24cdfd6-66112397',
   'function' => 
   array (
   ),
@@ -60,9 +60,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56507ba1acf418_89171557',
+  'unifunc' => 'content_5650daa3228028_70933808',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56507ba1acf418_89171557')) {function content_56507ba1acf418_89171557($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5650daa3228028_70933808')) {function content_5650daa3228028_70933808($_smarty_tpl) {?>
 <?php $_smarty_tpl->_capture_stack[0][] = array('path', null, null); ob_start(); ?>
 	<?php if (!isset($_smarty_tpl->tpl_vars['email_create']->value)) {?><?php echo smartyTranslate(array('s'=>'Authentication'),$_smarty_tpl);?>
 <?php } else { ?>

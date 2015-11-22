@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 15:11:07
+<?php /* Smarty version Smarty-3.1.19, created on 2015-11-22 17:06:27
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/category.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:57356284456507b7b103864-72727136%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:12487576865651e803a82f23-59035358%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '13d04959d4fdf0f4e68536c54cc11fcaf9640e72' => 
     array (
       0 => '/Users/Lubko/Documents/Local/dogs/themes/socialdog/category.tpl',
-      1 => 1448113352,
+      1 => 1448139372,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '57356284456507b7b103864-72727136',
+  'nocache_hash' => '12487576865651e803a82f23-59035358',
   'function' => 
   array (
   ),
@@ -33,9 +33,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56507b7b29d6b4_84151979',
+  'unifunc' => 'content_5651e803c11b69_34115297',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56507b7b29d6b4_84151979')) {function content_56507b7b29d6b4_84151979($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5651e803c11b69_34115297')) {function content_5651e803c11b69_34115297($_smarty_tpl) {?>
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./errors.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['category']->value)) {?>
@@ -110,7 +110,8 @@ px;"<?php }?>>
 foreach ($_from as $_smarty_tpl->tpl_vars['subcategory']->key => $_smarty_tpl->tpl_vars['subcategory']->value) {
 $_smarty_tpl->tpl_vars['subcategory']->_loop = true;
 ?>
-				<li>
+				<li class="col-xs-4">
+                    <div class="category-panel">
                 	<div class="subcategory-image">
 						<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getCategoryLink($_smarty_tpl->tpl_vars['subcategory']->value['id_category'],$_smarty_tpl->tpl_vars['subcategory']->value['link_rewrite']), ENT_QUOTES, 'UTF-8', true);?>
 " title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['subcategory']->value['name'], ENT_QUOTES, 'UTF-8', true);?>
@@ -127,15 +128,16 @@ $_smarty_tpl->tpl_vars['subcategory']->_loop = true;
 " height="<?php echo $_smarty_tpl->tpl_vars['mediumSize']->value['height'];?>
 " />
 						<?php }?>
+                         <div class="subcategory-name" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getCategoryLink($_smarty_tpl->tpl_vars['subcategory']->value['id_category'],$_smarty_tpl->tpl_vars['subcategory']->value['link_rewrite']), ENT_QUOTES, 'UTF-8', true);?>
+"><?php echo htmlspecialchars($_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate($_smarty_tpl->tpl_vars['subcategory']->value['name'],25,'...'), ENT_QUOTES, 'UTF-8', true);?>
+</div>
 					</a>
                    	</div>
-					<h5><a class="subcategory-name" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getCategoryLink($_smarty_tpl->tpl_vars['subcategory']->value['id_category'],$_smarty_tpl->tpl_vars['subcategory']->value['link_rewrite']), ENT_QUOTES, 'UTF-8', true);?>
-"><?php echo htmlspecialchars($_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate($_smarty_tpl->tpl_vars['subcategory']->value['name'],25,'...'), ENT_QUOTES, 'UTF-8', true);?>
-</a></h5>
 					<?php if ($_smarty_tpl->tpl_vars['subcategory']->value['description']) {?>
 						<div class="cat_desc"><?php echo $_smarty_tpl->tpl_vars['subcategory']->value['description'];?>
 </div>
 					<?php }?>
+                    </div>
 				</li>
 			<?php } ?>
 			</ul>
