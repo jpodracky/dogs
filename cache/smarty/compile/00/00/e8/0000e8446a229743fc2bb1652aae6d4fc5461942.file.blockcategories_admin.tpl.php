@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-15 19:30:03
+<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 17:53:53
          compiled from "/Users/jpodracky/_WWW/dogs/modules/blockcategories/views/blockcategories_admin.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2143815775648cf2bc6c8e5-33065826%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:19887132575650a1a1b7ba16-75560436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2143815775648cf2bc6c8e5-33065826',
+  'nocache_hash' => '19887132575650a1a1b7ba16-75560436',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5648cf2bc7f9b5_58656501',
+  'unifunc' => 'content_5650a1a1b93d98_57427695',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5648cf2bc7f9b5_58656501')) {function content_5648cf2bc7f9b5_58656501($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5650a1a1b93d98_57427695')) {function content_5650a1a1b93d98_57427695($_smarty_tpl) {?>
 <div class="form-group">
 	<label class="control-label col-lg-3">
 		<span class="label-tooltip" data-toggle="tooltip" data-html="true" title="" data-original-title="<?php echo smartyTranslate(array('s'=>'You can upload a maximum of 3 images.','mod'=>'blockcategories'),$_smarty_tpl);?>

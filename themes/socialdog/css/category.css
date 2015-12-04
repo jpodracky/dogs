@@ -12,8 +12,14 @@
         padding: 10px 10px 10px 0px; } }
   .content_scene_cat span.category-name {
     font: 600 42px/51px "Open Sans", sans-serif;
+<<<<<<< HEAD
     color: #363A41;
     margin-bottom: 12px; }
+=======
+    color: #fff;
+    margin-bottom: 12px; 
+  }
+>>>>>>> 9e04ec2e63eb0114c846c410b638f76675026c5c
     @media (max-width: 1199px) {
       .content_scene_cat span.category-name {
         font-size: 25px;
@@ -70,12 +76,18 @@
       #subcategories ul li .subcategory-name {
         font: 600 18px/22px "Open Sans", sans-serif;
         color: #555454;
+<<<<<<< HEAD
         background: rgba(255,255,255,0.8);
         padding-bottom: 7px;
         padding-top: 7px;
         position: relative;
         margin-top: -36px;
         text-transform: uppercase; }
+=======
+        text-transform: uppercase; 
+        white-space: normal;
+      }
+>>>>>>> 9e04ec2e63eb0114c846c410b638f76675026c5c
         #subcategories ul li .subcategory-name:hover {
           transition: width 0.8ms;
           color: #515151; }
