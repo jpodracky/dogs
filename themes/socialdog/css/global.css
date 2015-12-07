@@ -748,8 +748,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media (max-width: 992px) {
-#subcategories ul li.col-xs-4{
-	width: 49%;
+	#subcategories ul li .col-xs-4{
+		width: 49%;
+	}
 }
 
 /*------- Block section ---------*/
