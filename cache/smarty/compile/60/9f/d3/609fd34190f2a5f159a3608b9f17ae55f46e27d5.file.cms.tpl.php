@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 18:23:12
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-07 13:43:19
          compiled from "/Users/jpodracky/_WWW/dogs/themes/socialdog/cms.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7234225875650a880824540-76337436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17153983856657ee7274587-59370839%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '609fd34190f2a5f159a3608b9f17ae55f46e27d5' => 
     array (
       0 => '/Users/jpodracky/_WWW/dogs/themes/socialdog/cms.tpl',
-      1 => 1447613534,
+      1 => 1448991709,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7234225875650a880824540-76337436',
+  'nocache_hash' => '17153983856657ee7274587-59370839',
   'function' => 
   array (
   ),
@@ -30,9 +30,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5650a8809e91f9_93827630',
+  'unifunc' => 'content_56657ee7445cb1_43106114',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5650a8809e91f9_93827630')) {function content_5650a8809e91f9_93827630($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_56657ee7445cb1_43106114')) {function content_56657ee7445cb1_43106114($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/modifier.date_format.php';
 ?>
 <?php if (isset($_smarty_tpl->tpl_vars['cms']->value)&&!isset($_smarty_tpl->tpl_vars['cms_category']->value)) {?>
 	<?php if (!$_smarty_tpl->tpl_vars['cms']->value->active) {?>
@@ -106,7 +106,7 @@ $_smarty_tpl->tpl_vars['cmspages']->_loop = true;
 				<!-- will be used in detail of news --> 
 				<!-- <?php echo $_smarty_tpl->tpl_vars['cmspages']->value['content'];?>
  -->
-				<div class="container col-xs-4">
+				<div class="news-group"> <!-- 2015/12/01 PODI - Change container to news-group class -->
 					<div class="news-panel bg-white">
 						<div class="news-header">
 							<img class="news-img" src="<?php echo @constant('_PS_IMG_');?>

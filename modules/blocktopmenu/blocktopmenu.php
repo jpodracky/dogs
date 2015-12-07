@@ -590,7 +590,11 @@ class Blocktopmenu extends Module
 
             $html .= '<li'.(($this->page_name == 'category'
                 && (int)Tools::getValue('id_category') == (int)$category['id_category']) ? ' class="sfHoverForce"' : '').'>';
-            $html .= '<a href="'.$link.'" title="'.$category['name'].'">'.$category['name'].'</a>';
+            if ($category['level_depth'] == 1) {
+                $html .= '<a href="#" title="'.$category['name'].'">'.$category['name'].'</a>';
+            } else {
+                $html .= '<a href="'.$link.'" title="'.$category['name'].'">'.$category['name'].'</a>';
+            }
 
             /* PODI if level => 2 children categories not will be read */
             if ($category['level_depth'] < 2) {

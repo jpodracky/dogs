@@ -50,7 +50,7 @@
 				<!-- Meta desctiotion of news can be only 255 chars -->
 				<!-- will be used in detail of news --> 
 				<!-- {$cmspages.content} -->
-				<div class="container col-xs-4">
+				<div class="news-group"> <!-- 2015/12/01 PODI - Change container to news-group class -->
 					<div class="news-panel bg-white">
 						<div class="news-header">
 							<img class="news-img" src="{$smarty.const._PS_IMG_}puppie.jpg" alt="Test" title="test test" />

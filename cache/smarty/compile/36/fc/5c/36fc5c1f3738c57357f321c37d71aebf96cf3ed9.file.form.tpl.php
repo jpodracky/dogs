@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-14 15:15:57
+<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 22:00:29
          compiled from "/Users/jpodracky/_WWW/dogs/admindog/themes/default/template/controllers/products/helpers/form/form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:12898571175647421d038892-05419965%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6840908145650db6d614839-22220491%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -23,7 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '12898571175647421d038892-05419965',
+  'nocache_hash' => '6840908145650db6d614839-22220491',
   'function' => 
   array (
   ),
@@ -79,9 +79,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5647421e9b6c44_26592897',
+  'unifunc' => 'content_5650db6eeacc29_24076526',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5647421e9b6c44_26592897')) {function content_5647421e9b6c44_26592897($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/function.counter.php';
+<?php if ($_valid && !is_callable('content_5650db6eeacc29_24076526')) {function content_5650db6eeacc29_24076526($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/function.counter.php';
 ?>
 <?php if (isset($_smarty_tpl->tpl_vars['fields']->value['title'])) {?><h3><?php echo $_smarty_tpl->tpl_vars['fields']->value['title'];?>
 </h3><?php }?>
@@ -561,9 +561,9 @@ $_smarty_tpl->tpl_vars['language']->_loop = true;
 	</script>
 <?php }?>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-14 15:15:58
+<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 22:00:30
          compiled from "/Users/jpodracky/_WWW/dogs/admindog/themes/default/template/helpers/form/form_group.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5647421e26df49_49977593')) {function content_5647421e26df49_49977593($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5650db6e7a3595_71185737')) {function content_5650db6e7a3595_71185737($_smarty_tpl) {?>
 
 <?php if (count($_smarty_tpl->tpl_vars['groups']->value)&&isset($_smarty_tpl->tpl_vars['groups']->value)) {?>
 <div class="row">
