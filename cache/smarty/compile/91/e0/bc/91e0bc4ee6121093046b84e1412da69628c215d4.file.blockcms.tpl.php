@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 18:23:12
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-07 13:51:39
          compiled from "/Users/jpodracky/_WWW/dogs/themes/socialdog/modules/blockcms/blockcms.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:14557017995650a880350785-56701139%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1591229157566580db898463-52738752%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '91e0bc4ee6121093046b84e1412da69628c215d4' => 
     array (
       0 => '/Users/jpodracky/_WWW/dogs/themes/socialdog/modules/blockcms/blockcms.tpl',
-      1 => 1445119126,
+      1 => 1449491661,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14557017995650a880350785-56701139',
+  'nocache_hash' => '1591229157566580db898463-52738752',
   'function' => 
   array (
   ),
@@ -38,21 +38,26 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5650a880541313_34135223',
+  'unifunc' => 'content_566580dbb37323_50163140',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5650a880541313_34135223')) {function content_5650a880541313_34135223($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_566580dbb37323_50163140')) {function content_566580dbb37323_50163140($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/modifier.date_format.php';
+?>
 
 <?php if ($_smarty_tpl->tpl_vars['block']->value==1) {?>
 	<!-- Block CMS module -->
-	<?php  $_smarty_tpl->tpl_vars['cms_title'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['cms_title']->_loop = false;
+	<div class="block bg-white blockshadow">
+		<h4 class="title_block"><?php echo smartyTranslate(array('s'=>'Future Event','mod'=>'blockcms'),$_smarty_tpl);?>
+</h4>
+	<?php  $_smarty_tpl->tpl_vars['cms_page'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['cms_page']->_loop = false;
  $_smarty_tpl->tpl_vars['cms_key'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['cms_titles']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['cms_title']->key => $_smarty_tpl->tpl_vars['cms_title']->value) {
-$_smarty_tpl->tpl_vars['cms_title']->_loop = true;
- $_smarty_tpl->tpl_vars['cms_key']->value = $_smarty_tpl->tpl_vars['cms_title']->key;
+foreach ($_from as $_smarty_tpl->tpl_vars['cms_page']->key => $_smarty_tpl->tpl_vars['cms_page']->value) {
+$_smarty_tpl->tpl_vars['cms_page']->_loop = true;
+ $_smarty_tpl->tpl_vars['cms_key']->value = $_smarty_tpl->tpl_vars['cms_page']->key;
 ?>
 		<section id="informations_block_left_<?php echo $_smarty_tpl->tpl_vars['cms_key']->value;?>
-" class="block informations_block_left">
+" class="informations_block_left blockzeromargin">
+			<!--
 			<p class="title_block">
 				<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cms_title']->value['category_link'], ENT_QUOTES, 'UTF-8', true);?>
 ">
@@ -61,8 +66,28 @@ $_smarty_tpl->tpl_vars['cms_title']->_loop = true;
 <?php }?>
 				</a>
 			</p>
-			<div class="block_content list-block">
-				<ul>
+			-->
+			<div class="block_content list-block blockzeromargin">
+				<ul class="news-block">
+					<?php if (isset($_smarty_tpl->tpl_vars['cms_page']->value['cms_link'])) {?>
+						<li>
+							<div class="future-date-event">
+								<div class="future-day"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['cms_page']->value['date_event'],"%d");?>
+</div>
+								<div class="future-month"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['cms_page']->value['date_event'],"%a");?>
+</div>
+								<div class="future-year"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['cms_page']->value['date_event'],"%Y");?>
+</div>
+							</div>
+							<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cms_page']->value['cms_link'], ENT_QUOTES, 'UTF-8', true);?>
+" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cms_page']->value['meta_title'], ENT_QUOTES, 'UTF-8', true);?>
+">
+								<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cms_page']->value['meta_title'], ENT_QUOTES, 'UTF-8', true);?>
+
+							</a>
+						</li>
+					<?php }?>
+				<!--
 					<?php  $_smarty_tpl->tpl_vars['cms_page'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['cms_page']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['cms_title']->value['categories']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['cms_page']->key => $_smarty_tpl->tpl_vars['cms_page']->value) {
@@ -105,10 +130,12 @@ $_smarty_tpl->tpl_vars['cms_page']->_loop = true;
 							</a>
 						</li>
 					<?php }?>
+				-->
 				</ul>
 			</div>
 		</section>
 	<?php } ?>
+	</div>
 	<!-- /Block CMS module -->
 <?php } else { ?>
 	<!-- Block CMS module footer -->

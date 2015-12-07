@@ -349,7 +349,7 @@ class BlockCMSModel extends ObjectModel
 		if (Tools::version_compare(_PS_VERSION_, '1.6.0.12', '>=') == true && $id_shop != false)
 			$where_shop = ' AND cl.`id_shop` = '.(int)$id_shop;
 
-		$sql = 'SELECT c.`id_cms`, cl.`meta_title`, cl.`link_rewrite`
+		$sql = 'SELECT c.`id_cms`, cl.`meta_title`, cl.`link_rewrite`, c.`date_event`
 			FROM `'._DB_PREFIX_.'cms` c
 			INNER JOIN `'._DB_PREFIX_.'cms_shop` cs
 			ON (c.`id_cms` = cs.`id_cms`)
@@ -360,7 +360,7 @@ class BlockCMSModel extends ObjectModel
 			AND cl.`id_lang` = '.(int)Context::getContext()->language->id.
 			$where_shop.'
 			AND c.`active` = 1
-			ORDER BY `position`';
+			ORDER BY `date_event` DESC';
 
 		return Db::getInstance()->executeS($sql);
 	}
@@ -560,41 +560,55 @@ class BlockCMSModel extends ObjectModel
 		$content = array();
 		$context = Context::getContext();
 		$cmsCategories = BlockCMSModel::getCMSCategoriesByLocation($location, $id_shop);
+		$cmsPages = array();
 
 		if (is_array($cmsCategories) && count($cmsCategories))
 		{
 			foreach ($cmsCategories as $cmsCategory)
 			{
-				$key = (int)$cmsCategory['id_cms_block'];
-				$content[$key]['display_store'] = $cmsCategory['display_store'];
-				$content[$key]['cms'] = BlockCMSModel::getCMSBlockPages($cmsCategory['id_cms_block'], $id_shop);
-				$links = array();
-				if (count($content[$key]['cms']))
+				$cmsPages = BlockCMSModel::getCMSPages((int)$cmsCategory['id_cms_category']);
+
+				if (is_array($cmsPages) && count($cmsPages))
 				{
-					foreach ($content[$key]['cms'] as $row)
+					foreach ($cmsPages as $cmsPage) 
 					{
-						$row['link'] = $context->link->getCMSLink((int)$row['id_cms'], $row['link_rewrite']);
-						$links[] = $row;
+						$key = (int)$cmsPage['id_cms'];
+						$content[$key]['date_event'] = $cmsPage['date_event'];
+						$content[$key]['meta_title'] = $cmsPage['meta_title'];
+						$content[$key]['cms_link'] = $context->link->getCMSLink((int)$cmsPage['id_cms'], $cmsPage['link_rewrite']);
+
 					}
-				}
-
-				$content[$key]['cms'] = $links;
-				$content[$key]['categories'] = BlockCMSModel::getCMSBlockPagesCategories($cmsCategory['id_cms_block']);
-
-				$links = array();
-				if (count($content[$key]['categories']))
-				{
-					foreach ($content[$key]['categories'] as $row)
+					/*
+					$content[$key]['cms'] = BlockCMSModel::getCMSBlockPages($cmsCategory['id_cms_block'], $id_shop);
+					$links = array();
+					if (count($content[$key]['cms']))
 					{
-						$row['link'] = $context->link->getCMSCategoryLink((int)$row['id_cms'], $row['link_rewrite']);
-						$links[] = $row;
+						foreach ($content[$key]['cms'] as $row)
+						{
+							$row['link'] = $context->link->getCMSLink((int)$row['id_cms'], $row['link_rewrite']);
+							$links[] = $row;
+						}
 					}
-				}
 
-				$content[$key]['categories'] = $links;
-				$content[$key]['name'] = $cmsCategory['block_name'];
-				$content[$key]['category_link'] = $context->link->getCMSCategoryLink((int)$cmsCategory['id_cms_category'], $cmsCategory['link_rewrite']);
-				$content[$key]['category_name'] = $cmsCategory['category_name'];
+					$content[$key]['cms'] = $links;
+					$content[$key]['categories'] = BlockCMSModel::getCMSBlockPagesCategories($cmsCategory['id_cms_block']);
+
+					$links = array();
+					if (count($content[$key]['categories']))
+					{
+						foreach ($content[$key]['categories'] as $row)
+						{
+							$row['link'] = $context->link->getCMSCategoryLink((int)$row['id_cms'], $row['link_rewrite']);
+							$links[] = $row;
+						}
+					}
+
+					$content[$key]['categories'] = $links;
+					$content[$key]['name'] = $cmsCategory['block_name'];
+					$content[$key]['category_link'] = $context->link->getCMSCategoryLink((int)$cmsCategory['id_cms_category'], $cmsCategory['link_rewrite']);
+					$content[$key]['category_name'] = $cmsCategory['category_name'];
+					*/
+				}
 			}
 		}
 

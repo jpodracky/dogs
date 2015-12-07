@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-15 19:31:00
+<?php /* Smarty version Smarty-3.1.19, created on 2015-11-23 00:34:00
          compiled from "/Users/jpodracky/_WWW/dogs/admindog/themes/default/template/controllers/cms/helpers/form/form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7151970695648cf64d49e60-45636278%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:52789861565250e8a41633-08752302%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -23,7 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7151970695648cf64d49e60-45636278',
+  'nocache_hash' => '52789861565250e8a41633-08752302',
   'function' => 
   array (
   ),
@@ -79,9 +79,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5648cf665fa3a7_49687210',
+  'unifunc' => 'content_565250ea259650_98287909',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5648cf665fa3a7_49687210')) {function content_5648cf665fa3a7_49687210($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/function.counter.php';
+<?php if ($_valid && !is_callable('content_565250ea259650_98287909')) {function content_565250ea259650_98287909($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/function.counter.php';
 ?>
 <?php if (isset($_smarty_tpl->tpl_vars['fields']->value['title'])) {?><h3><?php echo $_smarty_tpl->tpl_vars['fields']->value['title'];?>
 </h3><?php }?>
@@ -1149,8 +1149,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 									<?php $_smarty_tpl->tpl_vars['groups'] = new Smarty_variable($_smarty_tpl->tpl_vars['input']->value['values'], null, 0);?>
 									<?php /*  Call merged included template "helpers/form/form_group.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('helpers/form/form_group.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '7151970695648cf64d49e60-45636278');
-content_5648cf66015588_26506801($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('helpers/form/form_group.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '52789861565250e8a41633-08752302');
+content_565250e9be91d2_68391852($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "helpers/form/form_group.tpl" */?>
 								<?php } elseif ($_smarty_tpl->tpl_vars['input']->value['type']=='shop') {?>
@@ -2151,8 +2151,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 									<?php $_smarty_tpl->tpl_vars['groups'] = new Smarty_variable($_smarty_tpl->tpl_vars['input']->value['values'], null, 0);?>
 									<?php /*  Call merged included template "helpers/form/form_group.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('helpers/form/form_group.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '7151970695648cf64d49e60-45636278');
-content_5648cf66015588_26506801($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('helpers/form/form_group.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '52789861565250e8a41633-08752302');
+content_565250e9be91d2_68391852($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "helpers/form/form_group.tpl" */?>
 								<?php } elseif ($_smarty_tpl->tpl_vars['input']->value['type']=='shop') {?>
@@ -2542,9 +2542,9 @@ $_smarty_tpl->tpl_vars['language']->_loop = true;
 	</script>
 <?php }?>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-15 19:31:02
+<?php /* Smarty version Smarty-3.1.19, created on 2015-11-23 00:34:01
          compiled from "/Users/jpodracky/_WWW/dogs/admindog/themes/default/template/helpers/form/form_group.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5648cf66015588_26506801')) {function content_5648cf66015588_26506801($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_565250e9be91d2_68391852')) {function content_565250e9be91d2_68391852($_smarty_tpl) {?>
 
 <?php if (count($_smarty_tpl->tpl_vars['groups']->value)&&isset($_smarty_tpl->tpl_vars['groups']->value)) {?>
 <div class="row">

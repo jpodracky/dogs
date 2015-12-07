@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-14 15:16:01
+<?php /* Smarty version Smarty-3.1.19, created on 2015-11-21 22:00:35
          compiled from "/Users/jpodracky/_WWW/dogs/admindog/themes/default/template/controllers/products/pack.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:506217526564742214bdb45-61001647%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1886926495650db7328a281-47418063%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '506217526564742214bdb45-61001647',
+  'nocache_hash' => '1886926495650db7328a281-47418063',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_564742215919a8_37862525',
+  'unifunc' => 'content_5650db734e4040_93631721',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_564742215919a8_37862525')) {function content_564742215919a8_37862525($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5650db734e4040_93631721')) {function content_5650db734e4040_93631721($_smarty_tpl) {?>
 
 <input type="hidden" name="submitted_tabs[]" value="Pack" />
 <hr />

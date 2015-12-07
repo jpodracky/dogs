@@ -133,7 +133,7 @@ select * from dog_hook_module where id_hook in (56, 38);
 select * from dog_hook where name like '%auth%';
 select * from dog_hook_alias where alias like '%auth%';
 
-select * from dog_configuration where name like '%PS_REGISTRATION_PROCESS_TYPE%';
+select * from dog_configuration;
 
 select * from dog_cms_category;
 select * from dog_cms_category_lang;
@@ -145,5 +145,49 @@ select * from dog_cms_block_shop;
 SHOW PROCEDURE STATUS;
 SHOW FUNCTION STATUS;
 
-select * from dog_configuration where value  like '%dog%';
+select * from dog_configuration where name like '%LOGO%';
 select * from dog_shop_url;
+
+select * from dog_employee;
+
+select * from dog_category;
+
+select * from dog_hook where name like '%righ%';
+select * from dog_hook_alias where alias like '%categ%';
+select * from dog_hook_alias where id_hook_alias = 8;
+select * from dog_hook_module where id_hook = 8;
+select * from dog_hook_alias where name = 'displayRightColumn';
+
+select * from dog_module where name like '%cms%';
+
+select * from dog_hook_module x, dog_hook y where x.id_module = 7 and x.id_hook = y.id_hook;
+
+select * from dog_configuration where name like '%menu%';
+
+select * from dog_cms_block;
+select * from dog_cms_block_lang;
+select * from dog_cms_block_page;
+select * from dog_cms_block_shop;
+select * from dog_cms;
+
+SELECT c.`id_cms`, cl.`meta_title`, cl.`link_rewrite`, c.`active`, c.`date_event`
+			FROM `dog_cms` c
+			INNER JOIN `dog_cms_shop` cs
+			ON (c.`id_cms` = cs.`id_cms`)
+			INNER JOIN `dog_cms_lang` cl
+			ON (c.`id_cms` = cl.`id_cms`)
+			WHERE c.`id_cms_category` = 2
+			AND cs.`id_shop` = 1
+			AND cl.`id_lang` = 2
+			AND c.`active` = 1
+			ORDER BY `date_event de`;
+            
+select * from ps_configuration where name like '_PS_FILE_IMPORT_SCS_';
+select * from ps_itf_product_2;
+select * from ps_tab_lang;
+select * from ps_tab;
+select * from ps_itf_product order by create_date desc;
+select * from ps_product_attribute_combination where id_product_attribute in (1, 2, 3, 4, 5, 6);
+show tables like '%combina%';
+select * from ps_product where reference = '140101';
+select * from ps_product_attribute where id_product = 1;

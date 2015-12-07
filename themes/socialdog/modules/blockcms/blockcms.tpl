@@ -6,15 +6,32 @@
 
 {if $block == 1}
 	<!-- Block CMS module -->
-	{foreach from=$cms_titles key=cms_key item=cms_title}
-		<section id="informations_block_left_{$cms_key}" class="block informations_block_left">
+	<div class="block bg-white blockshadow">
+		<h4 class="title_block">{l s='Future Event' mod='blockcms'}</h4>
+	{foreach from=$cms_titles key=cms_key item=cms_page}
+		<section id="informations_block_left_{$cms_key}" class="informations_block_left blockzeromargin">
+			<!--
 			<p class="title_block">
 				<a href="{$cms_title.category_link|escape:'html':'UTF-8'}">
 					{if !empty($cms_title.name)}{$cms_title.name}{else}{$cms_title.category_name}{/if}
 				</a>
 			</p>
-			<div class="block_content list-block">
-				<ul>
+			-->
+			<div class="block_content list-block blockzeromargin">
+				<ul class="news-block">
+					{if isset($cms_page.cms_link)}
+						<li>
+							<div class="future-date-event">
+								<div class="future-day">{$cms_page.date_event|date_format:"%d"}</div>
+								<div class="future-month">{$cms_page.date_event|date_format:"%a"}</div>
+								<div class="future-year">{$cms_page.date_event|date_format:"%Y"}</div>
+							</div>
+							<a href="{$cms_page.cms_link|escape:'html':'UTF-8'}" title="{$cms_page.meta_title|escape:'html':'UTF-8'}">
+								{$cms_page.meta_title|escape:'html':'UTF-8'}
+							</a>
+						</li>
+					{/if}
+				<!--
 					{foreach from=$cms_title.categories item=cms_page}
 						{if isset($cms_page.link)}
 							<li class="bullet">
@@ -40,10 +57,12 @@
 							</a>
 						</li>
 					{/if}
+				-->
 				</ul>
 			</div>
 		</section>
 	{/foreach}
+	</div>
 	<!-- /Block CMS module -->
 {else}
 	<!-- Block CMS module footer -->
