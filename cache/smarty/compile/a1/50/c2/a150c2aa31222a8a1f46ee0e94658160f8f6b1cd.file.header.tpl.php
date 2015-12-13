@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-11-22 17:06:27
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-06 20:45:49
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:11413059265651e803d15d03-01570614%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13933164095664906de09fd9-30482410%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11413059265651e803d15d03-01570614',
+  'nocache_hash' => '13933164095664906de09fd9-30482410',
   'function' => 
   array (
   ),
@@ -57,9 +57,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5651e80404da46_48316232',
+  'unifunc' => 'content_5664906e20a4e7_31971388',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5651e80404da46_48316232')) {function content_5651e80404da46_48316232($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_5664906e20a4e7_31971388')) {function content_5664906e20a4e7_31971388($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
