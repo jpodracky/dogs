@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:17:26
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/javascript.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1991793550566d7df63e8f73-95896806%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:12:38
+         compiled from "/Users/Lubko/Documents/Local/dogs/themes/javascript.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1432502275566d7cd6ee5251-61704039%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> origin/master
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '1991793550566d7df63e8f73-95896806',
+=======
+  'nocache_hash' => '1432502275566d7cd6ee5251-61704039',
+>>>>>>> origin/master
   'function' => 
   array (
   ),
@@ -27,9 +37,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_566d7df648fce5_38522993',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_566d7df648fce5_38522993')) {function content_566d7df648fce5_38522993($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/modifier.replace.php';
+=======
+  'unifunc' => 'content_566d7cd7049d38_11402757',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_566d7cd7049d38_11402757')) {function content_566d7cd7049d38_11402757($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/modifier.replace.php';
+>>>>>>> origin/master
 ?>
 <?php if (isset($_smarty_tpl->tpl_vars['js_def']->value)&&is_array($_smarty_tpl->tpl_vars['js_def']->value)&&count($_smarty_tpl->tpl_vars['js_def']->value)) {?>
 <script type="text/javascript">
