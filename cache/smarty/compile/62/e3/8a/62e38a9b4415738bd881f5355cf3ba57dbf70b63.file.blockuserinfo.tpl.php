@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:17:25
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:51:45
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockuserinfo/blockuserinfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:385666306566d7df5912f23-43695594%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:12:38
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockuserinfo/blockuserinfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1527621648566d7cd649d318-09969114%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> origin/master
+<?php /*%%SmartyHeaderCode:1204349199568281e1db3d67-92722641%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,22 +11,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '385666306566d7df5912f23-43695594',
-=======
-  'nocache_hash' => '1527621648566d7cd649d318-09969114',
->>>>>>> origin/master
+  'nocache_hash' => '1204349199568281e1db3d67-92722641',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_566d7df59139d2_99664412',
+  'unifunc' => 'content_568281e1db49a2_39318641',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7df59139d2_99664412')) {function content_566d7df59139d2_99664412($_smarty_tpl) {?><?php }} ?>
-=======
-  'unifunc' => 'content_566d7cd649e431_58921084',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7cd649e431_58921084')) {function content_566d7cd649e431_58921084($_smarty_tpl) {?><?php }} ?>
->>>>>>> origin/master
+<?php if ($_valid && !is_callable('content_568281e1db49a2_39318641')) {function content_568281e1db49a2_39318641($_smarty_tpl) {?><?php }} ?>

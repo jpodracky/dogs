@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:17:25
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:51:25
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/errors.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1328137764566d7df5eabd30-24766011%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:12:38
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/errors.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1204753596566d7cd6a477c0-66430539%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> origin/master
+<?php /*%%SmartyHeaderCode:141781631568281cd1313a3-11467972%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '1328137764566d7df5eabd30-24766011',
-=======
-  'nocache_hash' => '1204753596566d7cd6a477c0-66430539',
->>>>>>> origin/master
+  'nocache_hash' => '141781631568281cd1313a3-11467972',
   'function' => 
   array (
   ),
@@ -33,15 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_566d7df5f07c55_38793430',
+  'unifunc' => 'content_568281cd222b20_04099081',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7df5f07c55_38793430')) {function content_566d7df5f07c55_38793430($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_566d7cd6aa68d5_21777345',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7cd6aa68d5_21777345')) {function content_566d7cd6aa68d5_21777345($_smarty_tpl) {?>
->>>>>>> origin/master
+<?php if ($_valid && !is_callable('content_568281cd222b20_04099081')) {function content_568281cd222b20_04099081($_smarty_tpl) {?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['errors']->value)&&$_smarty_tpl->tpl_vars['errors']->value) {?>
 	<div class="alert alert-danger">

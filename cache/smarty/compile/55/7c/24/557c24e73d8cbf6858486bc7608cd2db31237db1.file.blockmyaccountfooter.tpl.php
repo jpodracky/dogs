@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:17:25
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:51:46
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockmyaccountfooter/blockmyaccountfooter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1145178676566d7df5bcfd89-65214617%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:12:38
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockmyaccountfooter/blockmyaccountfooter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:548868433566d7cd6759757-97730428%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> origin/master
+<?php /*%%SmartyHeaderCode:1159733996568281e2a4fb20-48880443%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '1145178676566d7df5bcfd89-65214617',
-=======
-  'nocache_hash' => '548868433566d7cd6759757-97730428',
->>>>>>> origin/master
+  'nocache_hash' => '1159733996568281e2a4fb20-48880443',
   'function' => 
   array (
   ),
@@ -35,15 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_566d7df5c8f004_88010252',
+  'unifunc' => 'content_568281e2b13781_20703300',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7df5c8f004_88010252')) {function content_566d7df5c8f004_88010252($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_566d7cd682a5d6_17504729',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7cd682a5d6_17504729')) {function content_566d7cd682a5d6_17504729($_smarty_tpl) {?>
->>>>>>> origin/master
+<?php if ($_valid && !is_callable('content_568281e2b13781_20703300')) {function content_568281e2b13781_20703300($_smarty_tpl) {?>
 
 <!-- Block myaccount module -->
 <section class="footer-block col-xs-12 col-sm-4">

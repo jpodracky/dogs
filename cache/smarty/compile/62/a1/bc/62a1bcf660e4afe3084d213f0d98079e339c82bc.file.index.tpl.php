@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:04:47
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 11:55:57
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1559605440566d7affc76a76-81369607%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-06 20:45:46
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5320372105664906a786420-44485793%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> origin/master
+<?php /*%%SmartyHeaderCode:1919296372568266bde93a91-84996610%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '1559605440566d7affc76a76-81369607',
-=======
-  'nocache_hash' => '5320372105664906a786420-44485793',
->>>>>>> origin/master
+  'nocache_hash' => '1919296372568266bde93a91-84996610',
   'function' => 
   array (
   ),
@@ -31,15 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_566d7affc88599_17441279',
+  'unifunc' => 'content_568266bdeacc68_64783914',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7affc88599_17441279')) {function content_566d7affc88599_17441279($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_5664906a7b2199_50835109',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5664906a7b2199_50835109')) {function content_5664906a7b2199_50835109($_smarty_tpl) {?>
->>>>>>> origin/master
+<?php if ($_valid && !is_callable('content_568266bdeacc68_64783914')) {function content_568266bdeacc68_64783914($_smarty_tpl) {?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['HOOK_HOME']->value)&&trim($_smarty_tpl->tpl_vars['HOOK_HOME']->value)) {?>
 	<div class="clearfix"><?php echo $_smarty_tpl->tpl_vars['HOOK_HOME']->value;?>

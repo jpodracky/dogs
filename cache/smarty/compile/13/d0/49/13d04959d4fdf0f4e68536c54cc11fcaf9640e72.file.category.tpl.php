@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:17:25
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:51:24
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/category.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:434996839566d7df5d0bfb7-28685676%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:12:38
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/category.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:100465475566d7cd68a7db5-37435249%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> origin/master
+<?php /*%%SmartyHeaderCode:1131831931568281ccb26f05-32104436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '434996839566d7df5d0bfb7-28685676',
-=======
-  'nocache_hash' => '100465475566d7cd68a7db5-37435249',
->>>>>>> origin/master
+  'nocache_hash' => '1131831931568281ccb26f05-32104436',
   'function' => 
   array (
   ),
@@ -43,15 +33,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_566d7df5ea0cd9_64754611',
+  'unifunc' => 'content_568281cd1273f3_08690439',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7df5ea0cd9_64754611')) {function content_566d7df5ea0cd9_64754611($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_566d7cd6a3d1a3_72535904',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7cd6a3d1a3_72535904')) {function content_566d7cd6a3d1a3_72535904($_smarty_tpl) {?>
->>>>>>> origin/master
+<?php if ($_valid && !is_callable('content_568281cd1273f3_08690439')) {function content_568281cd1273f3_08690439($_smarty_tpl) {?>
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./errors.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['category']->value)) {?>

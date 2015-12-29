@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-13 15:04:47
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 11:55:57
          compiled from "/Users/Lubko/Documents/Local/dogs/modules/blockcmsinfo/blockcmsinfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:81437139566d7aff85fa57-67713833%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-06 20:45:45
-         compiled from "/Users/Lubko/Documents/Local/dogs/modules/blockcmsinfo/blockcmsinfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:68201099656649069d6f406-30060225%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> origin/master
+<?php /*%%SmartyHeaderCode:1059144698568266bda94c22-12351669%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '81437139566d7aff85fa57-67713833',
-=======
-  'nocache_hash' => '68201099656649069d6f406-30060225',
->>>>>>> origin/master
+  'nocache_hash' => '1059144698568266bda94c22-12351669',
   'function' => 
   array (
   ),
@@ -32,15 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_566d7aff87c660_91356540',
+  'unifunc' => 'content_568266bdab8bb7_52900010',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_566d7aff87c660_91356540')) {function content_566d7aff87c660_91356540($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_56649069da75f9_17037985',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56649069da75f9_17037985')) {function content_56649069da75f9_17037985($_smarty_tpl) {?>
->>>>>>> origin/master
+<?php if ($_valid && !is_callable('content_568266bdab8bb7_52900010')) {function content_568266bdab8bb7_52900010($_smarty_tpl) {?>
 <?php if (count($_smarty_tpl->tpl_vars['infos']->value)>0) {?>
 <!-- MODULE Block cmsinfo -->
 <div id="cmsinfo_block">

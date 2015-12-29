@@ -42,6 +42,8 @@
         .content_scene_cat .content_scene .cat_desc a:hover {
           color: #515151; }
 
+   
+
 /* ************************************************************************************************
 									Sub Categories Styles
 ************************************************************************************************ */
@@ -88,7 +90,7 @@
         text-transform: uppercase; 
         white-space: normal;
       }
->>>>>>> 9e04ec2e63eb0114c846c410b638f76675026c5c
+
         #subcategories ul li .subcategory-name:hover {
           transition: width 0.8ms;
           color: #515151; }
@@ -135,6 +137,19 @@ background: rgba(255,255,255,0.7);
 
 
 }
+/*
+  .content_scene_cat_bg{
+
+    background-size: 400px ! important;
+    min-height: 930px ;
+    background-position: 0% 15% !important;
+    background-repeat: no-repeat no-repeat;
+   } 
+
+  .content_scene_cat_bg  .cat_desc .rte {
+   margin-left: 40%;
+   margin-top: 3%;
+  }  */
 
 
 
