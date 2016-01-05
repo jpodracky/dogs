@@ -152,17 +152,17 @@ select * from dog_employee;
 
 select * from dog_category;
 
-select * from dog_hook where name like '%righ%';
-select * from dog_hook_alias where alias like '%categ%';
+select * from dog_hook where name like '%left%';
+select * from dog_hook_alias where alias like '%cms%';
 select * from dog_hook_alias where id_hook_alias = 8;
-select * from dog_hook_module where id_hook = 8;
+select * from dog_hook_module where id_hook = 7;
 select * from dog_hook_alias where name = 'displayRightColumn';
 
 select * from dog_module where name like '%cms%';
 
 select * from dog_hook_module x, dog_hook y where x.id_module = 7 and x.id_hook = y.id_hook;
 
-select * from dog_configuration where name like '%menu%';
+select * from dog_configuration where name like '%COLUM%';
 
 select * from dog_cms_block;
 select * from dog_cms_block_lang;
@@ -176,11 +176,11 @@ SELECT c.`id_cms`, cl.`meta_title`, cl.`link_rewrite`, c.`active`, c.`date_event
 			ON (c.`id_cms` = cs.`id_cms`)
 			INNER JOIN `dog_cms_lang` cl
 			ON (c.`id_cms` = cl.`id_cms`)
-			WHERE c.`id_cms_category` = 2
+			WHERE c.`id_cms_category` in (2, 3)
 			AND cs.`id_shop` = 1
 			AND cl.`id_lang` = 2
 			AND c.`active` = 1
-			ORDER BY `date_event de`;
+			ORDER BY `date_event` DESC;
             
 select * from ps_configuration where name like '_PS_FILE_IMPORT_SCS_';
 select * from ps_itf_product_2;
@@ -191,3 +191,18 @@ select * from ps_product_attribute_combination where id_product_attribute in (1,
 show tables like '%combina%';
 select * from ps_product where reference = '140101';
 select * from ps_product_attribute where id_product = 1;
+select * from ps_attribute_lang;
+select * from ps_product_attribute_shop;
+select * from ps_attribute_group;
+
+SELECT pa.*, ag.`id_attribute_group`, ag.`is_color_group`, agl.`name` AS group_name, al.`name` AS attribute_name,
+	a.`id_attribute`, pa.`unit_price_impact`
+FROM `ps_product_attribute` pa
+LEFT JOIN `ps_product_attribute_combination` pac ON pac.`id_product_attribute` = pa.`id_product_attribute`
+LEFT JOIN `ps_attribute` a ON a.`id_attribute` = pac.`id_attribute`
+LEFT JOIN `ps_attribute_group` ag ON ag.`id_attribute_group` = a.`id_attribute_group`
+LEFT JOIN `ps_attribute_lang` al ON (a.`id_attribute` = al.`id_attribute` AND al.`id_lang` = 1)
+LEFT JOIN `ps_attribute_group_lang` agl ON (ag.`id_attribute_group` = agl.`id_attribute_group` AND agl.`id_lang` = 1)
+WHERE pa.`id_product` = 1
+GROUP BY pa.`id_product_attribute`, ag.`id_attribute_group`
+ORDER BY pa.`id_product_attribute`;
