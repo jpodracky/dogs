@@ -7,6 +7,12 @@
   margin: 0 0 26px 0; }
   .content_scene_cat .content_scene_cat_bg {
     padding: 18px 10px 10px 0x; }
+
+    .catdesc .content_scene_cat_bg{
+
+    background-image: none !important;
+   } 
+
     @media (max-width: 1199px) {
       .content_scene_cat .content_scene_cat_bg {
         padding: 10px 10px 10px 0px; } }
@@ -115,42 +121,120 @@
 background: rgba(255,255,255,0.7);
 
                    }
-
+                 }
 @media (max-width: 1199px) {
-
- 
-
       #subcategories ul li .subcategory-image a img {  
         max-height: 179px ;
         height: 179px;
       }
-
-
-
+    }
 @media (max-width: 992px){
 #subcategories ul li .subcategory-image a img {
  max-height: 208px ;
-    
-
-}
+    }
 }
 
+.catdesc.columns-container{
+
+  background: #fff;
+  
+}
+.imgdescdog{
+
+  display:block;
+  margin: 0 auto;
+}
+.infodogone h3 ,.infodogtwo h3 ,.infodogthree h3, .infodogfour h3  {
+
+  text-align:center;
+  padding-bottom: 15px;
+}
+.infodogoneinside,.infodogtwoinside , .infodogthreeinside, .infodogfourinside {
+
+  width: 200px;
+height: 200px;
+border-radius: 50%;
+background: #EFF1F2;
+margin: 0 auto;
+text-align: center;
+line-height: 1;padding-top:75px;
+font-weight:bold;
+color: green;
+}
+
+.infodogoneinside {
+
+  background: url("http://localhost:8080/dogs/img/cms/vyska.png") top center no-repeat;
+}
+.infodogtwoinside {
+
+  background: url("http://localhost:8080/dogs/img/cms/vaha.png") top center no-repeat;
+}
+
+.descriptiondog{
+width: 50%;
+float:left;
+display:block;
+padding-top: 30px;
+padding-right: 20px;
+TEXT-ALIGN: JUSTIFY;
+}
+.descriptiondogfull{
+width: 100%;
+display: block;
+float:left;
+padding-top: 30px;
+  }
+.descriptiondog h3{
+color: green;
+padding-bottom: 20px;
 
 }
-/*
-  .content_scene_cat_bg{
+.descriptiondogfull h3{
+color: green;
+padding-bottom: 20px;
 
-    background-size: 400px ! important;
-    min-height: 930px ;
-    background-position: 0% 15% !important;
-    background-repeat: no-repeat no-repeat;
-   } 
+  }
 
-  .content_scene_cat_bg  .cat_desc .rte {
-   margin-left: 40%;
-   margin-top: 3%;
-  }  */
+  
 
+/*-----DOČASNE-----*/ 
+.catdesc #center_column{
+width: 100% !important;
+  }
+.catdesc #right_column {
+
+  display:none;
+}
+
+.leftdescription {
+
+  padding-left:3px;
+  padding-top: 30px;
+  TEXT-ALIGN: JUSTIFY;
+}
+
+.infodog {
+
+  width: 100%;
+  margin-top:30px;
+  margin: 0 auto;
+  border : 40px solid #EFF1F2;
+  padding: 30px;
+  float:left;
+
+}
+
+.infodogone,.infodogtwo,.infodogthree,.infodogfour{
+
+  background: white;
+  height: auto;
+}
+
+#category_description_short.rte{
+
+  display: none;
+}
 
 
 /*# sourceMappingURL=category.css.map */

@@ -4,6 +4,8 @@
  *  @copyright  2015-2016 F2FCREATIVE
  *}
 
+
+
 {if $block == 1}
 	<!-- Block CMS module -->
 	<div class="block bg-white blockshadow">

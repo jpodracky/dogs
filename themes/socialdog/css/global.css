@@ -761,6 +761,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .block {
 	margin-bottom: 30px; 
 }
+.block.bg-white.blockshadow {
+
+	background:	#F2F2F2;
+} 
 
 .blockzeromargin {
 	margin: 0px !important;
@@ -787,8 +791,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .block .title_block, .block h4 {
 	font: 600 18px/22px "Open Sans", sans-serif;
 	color: #555454;
-	background: #f6f6f6;
-	border-bottom: 5px solid #46a74e;
+	/*background: #f6f6f6;*/
+	background: #fff;
+	/*border-bottom: 5px solid #46a74e;*/
 	text-transform: uppercase;
 	padding: 10px 5px 10px 20px;
 	margin: 0px 0px 0px 0; 
@@ -824,7 +829,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .block .title_block a, .block h4 a {
-	color: #555454;
+	color: #62B645;
 }
     
 .block .title_block a:hover, .block h4 a:hover {
@@ -934,6 +939,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .block .list-block .news-block li a {
 	line-height: 3.5em;
+	color: #62B645;
 }
 
 .block .list-block .news-block li a:before {
@@ -951,6 +957,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	border: 1px solid #d6d4d4;
 	margin-right: 19px; 
 }
+
+#informations_block_left_2 {
+
+	padding-top: 15px;
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.block .products-block li .products-block-image {
