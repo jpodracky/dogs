@@ -49,9 +49,10 @@ class SocialUserProfile extends Module
 			|| !$this->installDb()
 			//|| !$this->registerHook('displayHome')
 			//|| !$this->registerHook('displayHeader')
-			|| !$this->registerHook('displayHomeTab')
-			|| !$this->registerHook('displayHomeTabContent')
-			|| !$this->registerHook('displayRightColumn') 
+			//|| !$this->registerHook('displayHomeTab')
+			//|| !$this->registerHook('displayHomeTabContent')
+			|| !$this->registerHook('displayRightColumn')
+			|| !$this->registerHook('displayLeftColumn')
 			|| !$this->registerHook('displayCustomerAccount')
 			|| !$this->registerHook('actionModuleRegisterHookAfter')
 			|| !$this->registerHook('actionModuleUnRegisterHookAfter'))
@@ -59,6 +60,7 @@ class SocialUserProfile extends Module
 			return false;
 
 		$this->_clearCache('socialuserprofile.tpl');
+		$this->_clearCache('socialuserprofilemenu.tpl');
 
 		return true;
 	}
@@ -96,6 +98,8 @@ class SocialUserProfile extends Module
 	 */
 	public function uninstall()
 	{
+		$this->_clearCache('socialuserprofile.tpl');
+		$this->_clearCache('socialuserprofilemenu.tpl');
 		if (!parent::uninstall() || !$this->uninstallModuleTab('AdminSocialUserProfile', array(1=>'Social User Profile'), 0) || !$this->uninstallDb())
 			return false;
 		return true;
@@ -127,8 +131,21 @@ class SocialUserProfile extends Module
 		return true;
 	}
 
+	protected function _assignMedia()
+	{
+		$this->context->controller->addJquery();	
+		$this->context->controller->addCss(($this->_path).'css/socialuserprofile.css');
+		$this->context->controller->addJS(($this->_path).'js/socialuserprofile.js');
+		$this->context->controller->setMedia(); // Empty function
+
+		return true;
+	}
+
 	public function displaySocialUserProfile()
 	{
+		if (!$this->_assignMedia())
+			return false;
+
 		if (!$this->isCached('socialuserprofile.tpl', $this->getCacheId()))
 		{	
 		
@@ -137,13 +154,50 @@ class SocialUserProfile extends Module
 		return $this->display(__FILE__, 'socialuserprofile.tpl', $this->getCacheId());
 	}
 
-	protected function _assignMedia()
+	public function displaySocialUserProfileMenu()
 	{
-		$this->context->controller->addJquery();	
-		$this->context->controller->addCss(($this->_path).'css/socialuserprofile.css');
-		$this->context->controller->addJS(($this->_path).'js/socialuserprofile.js');
-		$this->context->controller->setMedia(); // Empty function
+		if (!$this->_assignMedia())
+			return false;
+
+		if (!$this->isCached('socialuserprofilemenu.tpl', $this->getCacheId()))
+		{	
+		
+		}
+
+		return $this->display(__FILE__, 'socialuserprofilemenu.tpl', $this->getCacheId());
 	}
+	
+	public function hookDisplayCustomerAccount($params)
+	{
+		if (!$this->context->customer->isLogged())
+			return false;
+		return $this->displaySocialUserProfile();
+	}
+
+	public function hookDisplayLeftColumn($params)
+	{
+		if (!$this->context->customer->isLogged())
+			return false;
+		return $this->displaySocialUserProfileMenu();
+	}
+
+	public function hookDisplayRightColumn($params)
+	{
+		if (!$this->context->customer->isLogged())
+			return false;
+		return $this->displaySocialUserProfileMenu();
+	}
+
+	public function hookActionModuleUnRegisterHookAfter($params)
+	{	
+		return $this->displaySocialUserProfile();
+	}
+
+	public function hookActionModuleRegisterHookAfter($params)
+	{
+		return $this->displaySocialUserProfile();
+	}
+
 	/*
 	public function hookDisplayHome()
 	{
@@ -152,14 +206,12 @@ class SocialUserProfile extends Module
 			$this->_assignMedia();
 		return $this->displaySocialUserProfile();
 	}
-	*/
+	
 	public function hookDisplayHomeTab($params)
 	{
 		if (!$this->context->customer->isLogged())
 			return false;
-
 		$this->page_name = Dispatcher::getInstance()->getController();
-
 		if ($this->page_name !== 'index')
 			$this->_assignMedia();
 		return $this->displaySocialUserProfile();
@@ -167,56 +219,12 @@ class SocialUserProfile extends Module
 
 	public function hookDisplayHomeTabContent($params)
 	{
-		if (!$this->context->customer->isLogged())
-			return false;
-
 		$this->page_name = Dispatcher::getInstance()->getController();
-
 		if ($this->page_name !== 'index')
 			$this->_assignMedia();
 		return $this->displaySocialUserProfile();
 	}
-
-	public function hookActionModuleUnRegisterHookAfter($params)
-	{
-		$this->page_name = Dispatcher::getInstance()->getController();
-
-		if ($this->page_name !== 'index')
-			$this->_assignMedia();
-		return $this->displaySocialUserProfile();
-	}
-
-	public function hookActionModuleRegisterHookAfter($params)
-	{
-		$this->page_name = Dispatcher::getInstance()->getController();
-
-		if ($this->page_name !== 'index')
-			$this->_assignMedia();
-		return $this->displaySocialUserProfile();
-	}
-
-	public function hookDisplayLeftColumn($params)
-	{
-		$this->page_name = Dispatcher::getInstance()->getController();
-
-		if ($this->page_name !== 'index')
-			$this->_assignMedia();
-		return $this->displaySocialUserProfile();
-	}
-
-	public function hookDisplayRightColumn($params)
-	{
-		return $this->hookDisplayLeftColumn(params);
-	}
-
-	public function hookDisplayCustomerAccount($params)
-	{
-		$this->page_name = Dispatcher::getInstance()->getController();
-
-		if ($this->page_name !== 'index')
-			$this->_assignMedia();
-		return $this->displaySocialUserProfile();
-	}
+	*/
 	
 	/**
 	 * Module settings - content

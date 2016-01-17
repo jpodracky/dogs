@@ -123,7 +123,10 @@ select * from dog_cms_category;
 
 select * from dog_employee;
 select * from dog_customer;
+select * from dog_module where id_module in (
+select distinct(id_module) from dog_hook_module_exceptions);
 
+select * from dog_hook_module_exceptions where file_name = "myaccount";
 
 select * from dog_page_type;
 
@@ -185,5 +188,7 @@ AND cs.`id_shop` = 1
 AND cl.`id_lang` = 2
 AND c.`active` = 1
 ORDER BY `date_event` DESC;
+
+
             
 

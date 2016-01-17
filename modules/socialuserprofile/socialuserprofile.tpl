@@ -5,6 +5,8 @@
  *}
 
 <!-- Module of Social User Profile --> 
-<div class="row">
-	Test nasteni a vykresleni TPL
+<div class="col-lg-12">
+	<div class="row">
+		Test nasteni a vykresleni TPL
+	</div>
 </div>
