@@ -9,6 +9,8 @@ class SocialUserProfileModel extends ObjectModel
 {
 	private $sql;
 
+	private $customer;
+
 	const LEFT_COLUMN = 0;
 	const RIGHT_COLUMN = 1;
 	const FOOTER = 2;
@@ -27,6 +29,15 @@ class SocialUserProfileModel extends ObjectModel
 			'display_store' =>      array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt', 'required' => true)
 		),
 	);
+
+	public static function loadCustomerData($id_customer)
+	{
+		$customer = new Customer((int)$id_customer);
+		if (!Validate::isLoadedObject($customer))
+			die (Tools::displayError());
+
+		return $customer;
+	}
 
 	public static function createTables()
 	{

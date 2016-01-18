@@ -15,7 +15,9 @@ include_once(dirname(__FILE__) . '/class/SocialUserProfileModel.php');
  */
 class SocialUserProfile extends Module
 {
-	
+
+	public $content_profile = '';
+
 	/**
 	 * Construcor - basic settings
 	 */
@@ -36,6 +38,10 @@ class SocialUserProfile extends Module
 	
 		$this->confirmUninstall = $this->l('Are you sure you want to uninstall?');
 	
+		if (Tools::getValue('action_update')) 
+		{
+			$this->updateUserProfile();
+		}
 	}
 	
 	/**
@@ -141,6 +147,15 @@ class SocialUserProfile extends Module
 		return true;
 	}
 
+	public function setContentProfile()
+	{
+		$sup = new SocialUserProfileModel();
+		$this->context->smarty->assign('customer', $sup->loadCustomerData($this->context->cookie->id_customer));	
+		$this->context->smarty->assign('days', Tools::dateDays());
+		$this->context->smarty->assign('months', Tools::dateMonths());
+		$this->context->smarty->assign('years', Tools::dateYears());
+	}
+
 	public function displaySocialUserProfile()
 	{
 		if (!$this->_assignMedia())
@@ -148,8 +163,31 @@ class SocialUserProfile extends Module
 
 		if (!$this->isCached('socialuserprofile.tpl', $this->getCacheId()))
 		{	
-		
+			switch (Tools::getValue('profile')) {
+				case 'personal':
+					$this->setContentProfile();
+					break;
+				case 'kennel':
+					$this->content_profile .= 'Kennel';
+					break;
+				case 'dog':
+					$this->content_profile .= 'Dogs';
+					break;
+				case 'photo':
+					$this->content_profile .= 'Photos';
+					break;
+				case 'friend':
+					$this->content_profile .= 'Friends';
+					break;
+				case 'group':
+					$this->content_profile .= 'Groups';
+					break;
+				default:
+					$this->content_profile .= 'Obecny dashboard pro uzivatele';
+			}
 		}
+
+		$this->context->smarty->assign('content_profile', $this->content_profile);
 
 		return $this->display(__FILE__, 'socialuserprofile.tpl', $this->getCacheId());
 	}
@@ -161,7 +199,7 @@ class SocialUserProfile extends Module
 
 		if (!$this->isCached('socialuserprofilemenu.tpl', $this->getCacheId()))
 		{	
-		
+			
 		}
 
 		return $this->display(__FILE__, 'socialuserprofilemenu.tpl', $this->getCacheId());
@@ -311,6 +349,22 @@ class SocialUserProfile extends Module
 		//$helper->fields_value['PS_XLSPI_IMAGE_F'] = Configuration::get('PS_XLSPI_IMAGE_F');
 		 
 		return $helper->generateForm($fields_form);
+	}
+
+	public function updateUserProfile()
+	{
+		$customer = null;
+
+		$sup = new SocialUserProfileModel();
+		$customer = $sup->loadCustomerData($this->context->cookie->id_customer);
+		$customer->firstname = Tools::getValue('firstname');
+		$customer->lastname = Tools::getValue('lastname');
+		$customer->birthday = date('Y-m-d', strtotime(Tools::getValue('years').'-'.Tools::getValue('months').'-'.Tools::getValue('days')));
+		if (!$customer->update())
+		{
+			$this->errors[] = Tools::displayError('Imposible to update user profile:').' '.$customer->firstname.' '.$customer->lastname;
+		}
+
 	}	
 	
 }
