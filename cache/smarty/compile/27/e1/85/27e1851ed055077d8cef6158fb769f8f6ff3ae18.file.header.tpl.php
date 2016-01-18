@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-17 23:40:11
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-18 10:32:58
          compiled from "/Users/jpodracky/_WWW/dogs/themes/socialdog/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1279936764569c184bee52e4-52027862%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:993795600569cb14a44e173-70800248%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '27e1851ed055077d8cef6158fb769f8f6ff3ae18' => 
     array (
       0 => '/Users/jpodracky/_WWW/dogs/themes/socialdog/header.tpl',
-      1 => 1453025230,
+      1 => 1453100805,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1279936764569c184bee52e4-52027862',
+  'nocache_hash' => '993795600569cb14a44e173-70800248',
   'function' => 
   array (
   ),
@@ -58,9 +58,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_569c184c300c55_09310680',
+  'unifunc' => 'content_569cb14a78bab2_53680793',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_569c184c300c55_09310680')) {function content_569c184c300c55_09310680($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_569cb14a78bab2_53680793')) {function content_569cb14a78bab2_53680793($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
