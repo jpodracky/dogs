@@ -1,3 +1,6 @@
+# ignore these files
 *.sublime-project
 *.sublime-workspace
-/cache/*
+
+# Ignore these directories
+/cache/

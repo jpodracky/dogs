@@ -7,7 +7,7 @@
 
 /* Debug only */
 if (!defined('_PS_MODE_DEV_')) {
-define('_PS_MODE_DEV_', false);
+define('_PS_MODE_DEV_', true); // 16.1.15 POJA enabled debug mode...
 }
 /* Compatibility warning */
 define('_PS_DISPLAY_COMPATIBILITY_WARNING_', false);

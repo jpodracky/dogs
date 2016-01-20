@@ -254,6 +254,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .login a {
 	color: #fff;
 	padding: 10px 15px;
+	font-size: 14px;
 	background: transparent;
 	text-transform: uppercase;
 }
