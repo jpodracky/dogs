@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:09:12
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/javascript.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1697477394569579881f9e54-73374343%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:43
+         compiled from "/Users/Lubko/Documents/Local/dogs/themes/javascript.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:8437499755682838392de43-42856792%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> master
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '1697477394569579881f9e54-73374343',
+=======
+  'nocache_hash' => '8437499755682838392de43-42856792',
+>>>>>>> master
   'function' => 
   array (
   ),
@@ -27,9 +37,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_569579882cc766_43367885',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_569579882cc766_43367885')) {function content_569579882cc766_43367885($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/modifier.replace.php';
+=======
+  'unifunc' => 'content_56828383a13c46_04553467',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_56828383a13c46_04553467')) {function content_56828383a13c46_04553467($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/modifier.replace.php';
+>>>>>>> master
 ?>
 <?php if (isset($_smarty_tpl->tpl_vars['js_def']->value)&&is_array($_smarty_tpl->tpl_vars['js_def']->value)&&count($_smarty_tpl->tpl_vars['js_def']->value)) {?>
 <script type="text/javascript">

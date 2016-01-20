@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:04:31
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockcart/blockcart.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3057946165695786f86f468-67115327%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+=======
+<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:41
+         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockcart/blockcart.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:188638932856828381d8c523-74275227%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+>>>>>>> master
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +17,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
+<<<<<<< HEAD
   'nocache_hash' => '3057946165695786f86f468-67115327',
+=======
+  'nocache_hash' => '188638932856828381d8c523-74275227',
+>>>>>>> master
   'function' => 
   array (
   ),
@@ -55,9 +65,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
+<<<<<<< HEAD
   'unifunc' => 'content_56957870131bd5_95621542',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_56957870131bd5_95621542')) {function content_56957870131bd5_95621542($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/modifier.replace.php';
+=======
+  'unifunc' => 'content_56828382638863_48848239',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_56828382638863_48848239')) {function content_56828382638863_48848239($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/modifier.replace.php';
+>>>>>>> master
 if (!is_callable('smarty_function_counter')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/function.counter.php';
 ?>
 <!-- MODULE Block cart -->
