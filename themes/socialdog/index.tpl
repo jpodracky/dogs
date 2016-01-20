@@ -3,7 +3,7 @@
  *  @author J.Podracky, L.Fisher
  *  @copyright  2015-2016 F2FCREATIVE
  *}
-{* 
+{*
 {if isset($HOOK_HOME_TAB_CONTENT) && $HOOK_HOME_TAB_CONTENT|trim}
     {if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
         <ul id="home-page-tabs" class="nav nav-tabs clearfix">

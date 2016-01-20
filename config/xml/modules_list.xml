@@ -110,6 +110,7 @@
 	</modules>
 	<modules type="partner">
 		<module name="alipay"/>
+		<module name="amzpayments"/>
 		<module name="authorizeaim"/>
 		<module name="avalaratax"/>
 		<module name="bluepay"/>
