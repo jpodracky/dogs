@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:04:31
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:04
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blocksearch/blocksearch-top.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:11564242585695786f7d5ba1-39556617%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:41
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blocksearch/blocksearch-top.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:94291423556828381d04199-69580414%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:147372400756a547fcae9fe3-03169439%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '11564242585695786f7d5ba1-39556617',
-=======
-  'nocache_hash' => '94291423556828381d04199-69580414',
->>>>>>> master
+  'nocache_hash' => '147372400756a547fcae9fe3-03169439',
   'function' => 
   array (
   ),
@@ -32,15 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_5695786f85b390_87214178',
+  'unifunc' => 'content_56a547fcb651e8_93790220',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5695786f85b390_87214178')) {function content_5695786f85b390_87214178($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_56828381d797c6_01741359',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56828381d797c6_01741359')) {function content_56828381d797c6_01741359($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a547fcb651e8_93790220')) {function content_56a547fcb651e8_93790220($_smarty_tpl) {?>
 <!-- Block search module TOP -->
 <div id="search_block_top" class="col-sm-4 clearfix">
 	<form id="searchbox" method="get" action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('search',null,null,null,false,null,true), ENT_QUOTES, 'UTF-8', true);?>

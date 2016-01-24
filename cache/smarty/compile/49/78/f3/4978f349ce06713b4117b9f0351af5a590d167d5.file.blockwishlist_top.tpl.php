@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:09:11
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:10
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockwishlist/blockwishlist_top.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:175616726556957987578364-72491497%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:42
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockwishlist/blockwishlist_top.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:8704419655682838277c1a6-44707021%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:161466142056a54802d12829-98636014%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '175616726556957987578364-72491497',
-=======
-  'nocache_hash' => '8704419655682838277c1a6-44707021',
->>>>>>> master
+  'nocache_hash' => '161466142056a54802d12829-98636014',
   'function' => 
   array (
   ),
@@ -32,15 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_569579875b8021_82097508',
+  'unifunc' => 'content_56a54802d443b7_96574473',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_569579875b8021_82097508')) {function content_569579875b8021_82097508($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_568283827b4907_90551623',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_568283827b4907_90551623')) {function content_568283827b4907_90551623($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a54802d443b7_96574473')) {function content_56a54802d443b7_96574473($_smarty_tpl) {?>
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('wishlistProductsIds'=>$_smarty_tpl->tpl_vars['wishlist_products']->value),$_smarty_tpl);?>
 <?php $_smarty_tpl->smarty->_tag_stack[] = array('addJsDefL', array('name'=>'loggin_required')); $_block_repeat=true; echo $_smarty_tpl->smarty->registered_plugins['block']['addJsDefL'][0][0]->addJsDefL(array('name'=>'loggin_required'), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
 <?php echo smartyTranslate(array('s'=>'You must be logged in to manage your wishlist.','mod'=>'blockwishlist','js'=>1),$_smarty_tpl);?>

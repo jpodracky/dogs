@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:04:32
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:05
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockcategories/category-tree-branch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:974594149569578709bd1f8-07000198%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:42
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockcategories/category-tree-branch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:149252384356828382e23681-44069015%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:21884596656a547fda884f3-78111604%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '974594149569578709bd1f8-07000198',
-=======
-  'nocache_hash' => '149252384356828382e23681-44069015',
->>>>>>> master
+  'nocache_hash' => '21884596656a547fda884f3-78111604',
   'function' => 
   array (
   ),
@@ -34,15 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_56957870a16236_81032496',
+  'unifunc' => 'content_56a547fdaf1e30_07383271',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56957870a16236_81032496')) {function content_56957870a16236_81032496($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_56828382e87a20_25042895',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56828382e87a20_25042895')) {function content_56828382e87a20_25042895($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a547fdaf1e30_07383271')) {function content_56a547fdaf1e30_07383271($_smarty_tpl) {?>
 
 <li <?php if (isset($_smarty_tpl->tpl_vars['last']->value)&&$_smarty_tpl->tpl_vars['last']->value=='true') {?>class="last"<?php }?>>
 	<a 

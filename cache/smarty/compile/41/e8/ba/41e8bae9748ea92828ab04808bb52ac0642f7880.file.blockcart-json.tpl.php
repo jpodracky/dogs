@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:09:12
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:12
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockcart/blockcart-json.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1126384666569579887f0be8-34998475%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:25
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockcart/blockcart-json.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1916159239568283714b3d05-79053951%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:186701829056a54804af3383-53540170%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '1126384666569579887f0be8-34998475',
-=======
-  'nocache_hash' => '1916159239568283714b3d05-79053951',
->>>>>>> master
+  'nocache_hash' => '186701829056a54804af3383-53540170',
   'function' => 
   array (
   ),
@@ -57,15 +47,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_56957988a90c31_87728505',
+  'unifunc' => 'content_56a54804d6db98_91217690',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56957988a90c31_87728505')) {function content_56957988a90c31_87728505($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_5682837280abb4_59025227',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5682837280abb4_59025227')) {function content_5682837280abb4_59025227($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a54804d6db98_91217690')) {function content_56a54804d6db98_91217690($_smarty_tpl) {?>
 {
 "products": [
 <?php if ($_smarty_tpl->tpl_vars['products']->value) {?>

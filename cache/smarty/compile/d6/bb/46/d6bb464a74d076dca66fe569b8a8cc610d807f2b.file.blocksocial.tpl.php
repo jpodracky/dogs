@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:04:32
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:05
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blocksocial/blocksocial.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:9253206235695787039de53-57267097%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:42
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blocksocial/blocksocial.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:86365663356828382874e85-54472284%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:166572290756a547fd4c88b7-19525722%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '9253206235695787039de53-57267097',
-=======
-  'nocache_hash' => '86365663356828382874e85-54472284',
->>>>>>> master
+  'nocache_hash' => '166572290756a547fd4c88b7-19525722',
   'function' => 
   array (
   ),
@@ -38,15 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_5695787048c014_91878982',
+  'unifunc' => 'content_56a547fd590183_97972493',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5695787048c014_91878982')) {function content_5695787048c014_91878982($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_5682838293e688_71542589',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5682838293e688_71542589')) {function content_5682838293e688_71542589($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a547fd590183_97972493')) {function content_56a547fd590183_97972493($_smarty_tpl) {?>
 <section id="social_block" class="pull-right">
 	<ul>
 		<?php if (isset($_smarty_tpl->tpl_vars['facebook_url']->value)&&$_smarty_tpl->tpl_vars['facebook_url']->value!='') {?>

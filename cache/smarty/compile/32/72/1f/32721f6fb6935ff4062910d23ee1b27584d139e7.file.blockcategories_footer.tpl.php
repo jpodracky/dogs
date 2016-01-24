@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:04:32
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:05
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockcategories/blockcategories_footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:107460687856957870973f83-92165843%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:42
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blockcategories/blockcategories_footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:213433546356828382dd8679-57185406%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:208653669056a547fda3d408-84981288%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '107460687856957870973f83-92165843',
-=======
-  'nocache_hash' => '213433546356828382dd8679-57185406',
->>>>>>> master
+  'nocache_hash' => '208653669056a547fda3d408-84981288',
   'function' => 
   array (
   ),
@@ -34,15 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_569578709b4816_73003158',
+  'unifunc' => 'content_56a547fda82379_81276377',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_569578709b4816_73003158')) {function content_569578709b4816_73003158($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_56828382e18869_24636309',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56828382e18869_24636309')) {function content_56828382e18869_24636309($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a547fda82379_81276377')) {function content_56a547fda82379_81276377($_smarty_tpl) {?>
 
 <!-- Block categories module -->
 <section class="blockcategories_footer footer-block col-xs-12 col-sm-2">

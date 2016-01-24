@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:04:32
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:05
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blocknewsletter/blocknewsletter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1260969890569578702d45b0-75408237%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:42
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/modules/blocknewsletter/blocknewsletter.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1137307592568283827bd079-56113018%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:161454000356a547fd41edd7-14162680%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '1260969890569578702d45b0-75408237',
-=======
-  'nocache_hash' => '1137307592568283827bd079-56113018',
->>>>>>> master
+  'nocache_hash' => '161454000356a547fd41edd7-14162680',
   'function' => 
   array (
   ),
@@ -34,15 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_569578703908b5_35248252',
+  'unifunc' => 'content_56a547fd4bbe43_40815122',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_569578703908b5_35248252')) {function content_569578703908b5_35248252($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_56828382865d90_04528989',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56828382865d90_04528989')) {function content_56828382865d90_04528989($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a547fd4bbe43_40815122')) {function content_56a547fd4bbe43_40815122($_smarty_tpl) {?>
 <!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">
 	<h4><?php echo smartyTranslate(array('s'=>'Newsletter','mod'=>'blocknewsletter'),$_smarty_tpl);?>

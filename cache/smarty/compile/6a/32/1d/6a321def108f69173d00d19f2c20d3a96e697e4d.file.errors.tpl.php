@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:03:35
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:11
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/errors.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:63785235756957837eac9c7-87740977%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:14
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/errors.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:350219062568283664aeef3-12451916%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:20067209956a54803e53b58-98234208%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '63785235756957837eac9c7-87740977',
-=======
-  'nocache_hash' => '350219062568283664aeef3-12451916',
->>>>>>> master
+  'nocache_hash' => '20067209956a54803e53b58-98234208',
   'function' => 
   array (
   ),
@@ -33,15 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_56957837f096d2_79811669',
+  'unifunc' => 'content_56a54803eb7150_70136789',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56957837f096d2_79811669')) {function content_56957837f096d2_79811669($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_568283665ab8e4_79259239',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_568283665ab8e4_79259239')) {function content_568283665ab8e4_79259239($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a54803eb7150_70136789')) {function content_56a54803eb7150_70136789($_smarty_tpl) {?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['errors']->value)&&$_smarty_tpl->tpl_vars['errors']->value) {?>
 	<div class="alert alert-danger">

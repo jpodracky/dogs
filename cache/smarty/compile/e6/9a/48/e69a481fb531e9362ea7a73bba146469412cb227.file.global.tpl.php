@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:09:12
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:12
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/global.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16460327155695798811dea8-87828473%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
-<?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:43
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/global.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:48433963656828383841ca9-34858128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
+<?php /*%%SmartyHeaderCode:202067635656a548043bde42-30516288%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '16460327155695798811dea8-87828473',
-=======
-  'nocache_hash' => '48433963656828383841ca9-34858128',
->>>>>>> master
+  'nocache_hash' => '202067635656a548043bde42-30516288',
   'function' => 
   array (
   ),
@@ -46,15 +36,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_569579881ec967_80300563',
+  'unifunc' => 'content_56a548044a3ce4_13272996',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_569579881ec967_80300563')) {function content_569579881ec967_80300563($_smarty_tpl) {?>
-=======
-  'unifunc' => 'content_5682838391e291_05498171',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5682838391e291_05498171')) {function content_5682838391e291_05498171($_smarty_tpl) {?>
->>>>>>> master
+<?php if ($_valid && !is_callable('content_56a548044a3ce4_13272996')) {function content_56a548044a3ce4_13272996($_smarty_tpl) {?>
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('isMobile'=>$_smarty_tpl->tpl_vars['mobile_device']->value),$_smarty_tpl);?>
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('baseDir'=>$_smarty_tpl->tpl_vars['content_dir']->value),$_smarty_tpl);?>
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('baseUri'=>$_smarty_tpl->tpl_vars['base_uri']->value),$_smarty_tpl);?>
