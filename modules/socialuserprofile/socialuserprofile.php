@@ -18,6 +18,12 @@ class SocialUserProfile extends Module
 
 	public $content_profile = '';
 
+	public $id_lang;
+
+	protected $_address = array();
+
+	protected $id_country;
+
 	/**
 	 * Construcor - basic settings
 	 */
@@ -30,6 +36,7 @@ class SocialUserProfile extends Module
 		$this->need_instance = 0;
 		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
 		$this->bootstrap = true;
+		$this->id_lang = ($this->id_lang) ? $this->id_lang : Context::getContext()->language->id;
 	
 		parent::__construct();
 	
@@ -40,7 +47,17 @@ class SocialUserProfile extends Module
 	
 		if (Tools::getValue('action_update')) 
 		{
-			$this->updateUserProfile();
+			switch (trim(Tools::getValue('action_update')))
+			{
+				case 'user_profile':
+					$this->updateUserProfile();
+					break;
+				case 'user_address':
+					$this->updateUserAddress();
+					break;
+				default:
+					break;
+			}
 		}
 	}
 	
@@ -137,6 +154,9 @@ class SocialUserProfile extends Module
 		return true;
 	}
 
+	/**
+	 * Assign media files
+	 */
 	protected function _assignMedia()
 	{
 		$this->context->controller->addJquery();	
@@ -147,6 +167,41 @@ class SocialUserProfile extends Module
 		return true;
 	}
 
+	/**
+     * Assign template vars related to countries display
+     * @param null
+     * @return null
+     */
+    protected function assignCountries()
+    {
+        $this->id_country = (int)Tools::getCountry($this->_address[0]);
+        // Generate countries list
+        //if (Configuration::get('PS_RESTRICT_DELIVERED_COUNTRIES')) {
+        //    $countries = Carrier::getDeliveredCountries($this->context->language->id, true, true);
+        //} else {
+            $countries = Country::getCountries($this->context->language->id);
+        //}
+
+        // @todo use helper
+        $list = '';
+        foreach ($countries as $country) {
+            $selected = ((int)$country['id_country'] === $this->id_country) ? ' selected="selected"' : '';
+            $list .= '<option value="'.(int)$country['id_country'].'"'.$selected.'>'.htmlentities($country['name'], ENT_COMPAT, 'UTF-8').'</option>';
+        }
+
+        // Assign vars
+        $this->context->smarty->assign(array(
+            'countries_list' => $list,
+            'countries' => $countries,
+            'sl_country' => (int)$this->id_country,
+        ));
+    }
+
+    /**
+     * Assign user profile data
+     * @param null
+     * @return null
+     */
 	public function setContentProfile()
 	{
 		$sup = new SocialUserProfileModel();
@@ -154,8 +209,24 @@ class SocialUserProfile extends Module
 		$this->context->smarty->assign('days', Tools::dateDays());
 		$this->context->smarty->assign('months', Tools::dateMonths());
 		$this->context->smarty->assign('years', Tools::dateYears());
+
+		$no_address = (int)Customer::getAddressesTotalById($this->context->cookie->id_customer);
+		if ($no_address != 0) 
+		{
+			$this->_address = $sup->loadAdressesData(
+										$this->context->cookie->id_customer, 
+										$sup->getAddressesByCustomerId($this->context->cookie->id_customer), 
+										$this->id_lang);
+			$this->assignCountries();
+		}
+
+		$this->context->smarty->assign('address', $this->_address[0]);
+		$this->context->smarty->assign('address_validation', Address::$definition['fields']);
 	}
 
+	/**
+	 * Assign data and display user profile teplate
+	 */
 	public function displaySocialUserProfile()
 	{
 		if (!$this->_assignMedia())
@@ -192,6 +263,9 @@ class SocialUserProfile extends Module
 		return $this->display(__FILE__, 'socialuserprofile.tpl', $this->getCacheId());
 	}
 
+	/**
+	 * Assign data and display user profile menu template
+	 */
 	public function displaySocialUserProfileMenu()
 	{
 		if (!$this->_assignMedia())
@@ -351,6 +425,9 @@ class SocialUserProfile extends Module
 		return $helper->generateForm($fields_form);
 	}
 
+	/**
+	 * Update user profile
+	 */
 	public function updateUserProfile()
 	{
 		$customer = null;
@@ -366,5 +443,130 @@ class SocialUserProfile extends Module
 		}
 
 	}	
+
+	/**
+	 * Update user address
+	 */
+	public function updateUserAddress()
+	{
+		$address = null;
+		$id_address = Tools::getValue('id_address');
+
+		if (isset($id_address)) 
+		{
+            $address = new Address($id_address);
+            if (Validate::isLoadedObject($address) && Customer::customerHasAddress($this->context->cookie->id_customer, $id_address)) 
+            {
+            	$this->errors = $address->validateController();
+		        $address->id_customer = (int)$this->context->customer->id;
+		        $address->address1 = Tools::getValue('address1');
+		        $address->address2 = Tools::getValue('address2');
+		        $address->city = Tools::getValue('city');
+		        $address->phone = Tools::getValue('phone');
+		        $address->phone_mobile = Tools::getValue('phone_mobile');
+		        $address->alias = Tools::getValue('alias');
+		        $address->other = Tools::getValue('other');
+		        $address->id_country = Tools::getValue('id_country');
+		        $address->postcode = Tools::getValue('postcode');
+		        $address->update();
+
+		        /*
+
+		        // Check page token
+		        if ($this->context->customer->isLogged()) {
+		            $this->errors[] = Tools::displayError('Invalid token.');
+		        }
+
+		        // Check phone
+		        if (Configuration::get('PS_ONE_PHONE_AT_LEAST') && !Tools::getValue('phone') && !Tools::getValue('phone_mobile')) {
+		            $this->errors[] = Tools::displayError('You must register at least one phone number.');
+		        }
+
+		        if (Tools::getValue('id_country')) {
+		            // Check country
+		            if (!($country = new Country($address->id_country)) || !Validate::isLoadedObject($country)) {
+		                throw new PrestaShopException('Country cannot be loaded with address->id_country');
+		            }
+
+		            if ((int)$country->contains_states && !(int)$address->id_state) {
+		                $this->errors[] = Tools::displayError('This country requires you to chose a State.');
+		            }
+
+		            if (!$country->active) {
+		                $this->errors[] = Tools::displayError('This country is not active.');
+		            }
+
+		            $address->id_country = $country->id_country;
+		            $postcode = Tools::getValue('postcode');
+		            /* Check zip code format */
+		        /*    if ($country->zip_code_format && !$country->checkZipCode($postcode)) {
+		                $this->errors[] = sprintf(Tools::displayError('The Zip/Postal code you\'ve entered is invalid. It must follow this format: %s'), str_replace('C', $country->iso_code, str_replace('N', '0', str_replace('L', 'A', $country->zip_code_format))));
+		            } elseif (empty($postcode) && $country->need_zip_code) {
+		                $this->errors[] = Tools::displayError('A Zip/Postal code is required.');
+		            } elseif ($postcode && !Validate::isPostCode($postcode)) {
+		                $this->errors[] = Tools::displayError('The Zip/Postal code is invalid.');
+		            }
+
+		            // Check country DNI
+		            /*
+		            if ($country->isNeedDni() && (!Tools::getValue('dni') || !Validate::isDniLite(Tools::getValue('dni')))) {
+		                $this->errors[] = Tools::displayError('The identification number is incorrect or has already been used.');
+		            } elseif (!$country->isNeedDni()) {
+		                $address->dni = null;
+		            }
+		            */
+		       /* }
+
+		        // Check if the alias exists
+		        if (!$this->context->customer->is_guest && !empty($_POST['alias']) && (int)$this->context->customer->id > 0) {
+		            $id_address = Tools::getValue('id_address');
+		            if (Configuration::get('PS_ORDER_PROCESS_TYPE') && (int)Tools::getValue('opc_id_address_'.Tools::getValue('type')) > 0) {
+		                $id_address = Tools::getValue('opc_id_address_'.Tools::getValue('type'));
+		            }
+
+		            if (Address::aliasExist(Tools::getValue('alias'), (int)$id_address, (int)$this->context->customer->id)) {
+		                $this->errors[] = sprintf(Tools::displayError('The alias "%s" has already been used. Please select another one.'), Tools::safeOutput(Tools::getValue('alias')));
+		            }
+		        }
+
+		        // Check the requires fields which are settings in the BO
+		        $this->errors = array_merge($this->errors, $address->validateFieldsRequiredDatabase());
+
+		        // Don't continue this process if we have errors !
+		        if ($this->errors) {
+		            return;
+		        }
+
+		        // If we edit this address, delete old address and create a new one
+		        if (Validate::isLoadedObject($this->_address)) {
+		            if (Validate::isLoadedObject($country) && !$country->contains_states) {
+		                $address->id_state = 0;
+		            }
+		            $address_old = $this->_address;
+		            if (Customer::customerHasAddress($this->context->customer->id, (int)$address_old->id)) {
+		                if ($address_old->isUsed()) {
+		                    $address_old->delete();
+		                } else {
+		                    $address->id = (int)$address_old->id;
+		                    $address->date_add = $address_old->date_add;
+		                }
+		            }
+		        }
+
+		        // Save address
+		        if ($result = $address->update())
+		     		Tools::redirect('index.php?controller=my-account&profile=personal');
+                
+            }  
+            else 
+            {
+                $this->errors[] = Tools::displayError('An error occurred while updating your address.');
+            }
+            */
+        	}
+
+        }
+
+	}
 	
 }
