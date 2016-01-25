@@ -202,4 +202,4 @@ select * from dog_country_lang;
 -- insert into dog_country_lang 
 select x.`id_country`, 2, x.`name` from dog_country_lang x;
 
-select * from id_country;
+select * from dog_country_lang;
