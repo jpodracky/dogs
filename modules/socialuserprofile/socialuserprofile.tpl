@@ -5,13 +5,28 @@
  *}
 
 <!-- Module of Social User Profile --> 
-<div class="col-lg-12">
-	<div class="row">
-		<div class="panel blockshadow clearfix">
+<div class="col-lg-12 settings blockshadow">
+
+	<h3 class="settingtitle"> User settings </h3>
+
+	<ul class="settingsmenu col-lg-4"> 
+
+		<li class="linkpersonalinfo">	
+			<a> {l s='Personal user profile'}  </a>
+		</li>
+		<li class="linkuseraddress">	
+			<a>  {l s='User adresses'} </a>
+		</li>
+
+	</ul>
+	<div class="col-lg-8 settingcontent">
+
+	<div class="row personalinfo">
+		<div class="panel clearfix">
 			{if isset($smarty.get.profile) && ($smarty.get.profile eq 'personal')}
 			<div class="panel-heading">
 				<i class="icon-user"></i>
-				{l s='Personal user profile'}
+				{*{l s='Personal user profile'}*}
 			</div>
 			<div class="form-group clearfix">
 				<form action="{$smarty.server.REQUEST_URI|escape:'html':'UTF-8'}" method="post" class="form-horizontal" > {* onsubmit="return checkForm();"	*}
@@ -136,7 +151,7 @@
 					</div>
 					<p class="inline-infos required"><sup>*</sup>{l s='Required field'}</p>
 					<div class="submit clearfix">
-						<button type="submit" name="submitChanges" id="submitchanges" class="btn btn-default button button-medium">
+						<button type="submit" name="submitChanges" id="submitchanges" class="btn btn-default button button-medium safebutton">
 							<span>{l s='Safe profile'}<i class="icon-chevron-right right"></i></span>
 						</button>
 					</div>
@@ -145,11 +160,11 @@
 		</div>	
 	</div>
 
-	<div class="row">
-		<div class="panel blockshadow clearfix">
+	<div class="row useraddress">
+		<div class="panel clearfix">
 			<div class="panel-heading">
 				<i class="icon-user"></i>
-				{l s='User adresses'}
+				{*{l s='User adresses'}*}
 			</div>
 			<div class="form-group clearfix">
 				<form action="{$smarty.server.REQUEST_URI|escape:'html':'UTF-8'}" method="post" class="form-horizontal" id="add_address">
@@ -243,5 +258,6 @@
 			{/if}
 			{$content_profile}
 		</div>
+	</div>
 	</div>
 </div>
