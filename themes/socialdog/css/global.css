@@ -213,6 +213,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .logo img {
 	margin: 0;
 	padding: 0;
+
+	width: 60%;
+	height: 60%;
 }
 
 .logo_global {
@@ -374,13 +377,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .form-group.form-error input, .form-group.form-error textarea {
 	border: 1px solid #f13340;
 	color: #f13340;
-	background: url(../img/icon/form-error.png) 98% 5px no-repeat #fff1f2; 
+	background: url(../img/icon/form-error.png) 94% 17px  no-repeat rgba(255, 255, 255, 0.2); 
 }
 
 .form-group.form-ok input, .form-group.form-ok textarea {
 	border: 1px solid #46a74e;
 	color: #35b33f;
-	background: url(../img/icon/form-ok.png) 98% 5px no-repeat #ddf9e1; 
+	background: url(../img/icon/form-ok.png) 94% 17px no-repeat rgba(255, 255, 255, 0.2);
 }
 
 .form-group.form-error .form-control, .form-group.form-ok .form-control {
@@ -759,6 +762,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .block {
 	margin-bottom: 30px; 
 }
+.block.bg-white.blockshadow {
+
+	background:	#F2F2F2;
+} 
 
 .blockzeromargin {
 	margin: 0px !important;
@@ -785,8 +792,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .block .title_block, .block h4 {
 	font: 600 18px/22px "Open Sans", sans-serif;
 	color: #555454;
-	background: #f6f6f6;
-	border-bottom: 5px solid #46a74e;
+	/*background: #f6f6f6;*/
+	background: #fff;
+	/*border-bottom: 5px solid #46a74e;*/
 	text-transform: uppercase;
 	padding: 10px 5px 10px 20px;
 	margin: 0px 0px 0px 0; 
@@ -822,7 +830,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .block .title_block a, .block h4 a {
-	color: #555454;
+	color: #62B645;
 }
     
 .block .title_block a:hover, .block h4 a:hover {
@@ -932,6 +940,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .block .list-block .news-block li a {
 	line-height: 3.5em;
+	color: #62B645;
 }
 
 .block .list-block .news-block li a:before {
@@ -949,6 +958,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	border: 1px solid #d6d4d4;
 	margin-right: 19px; 
 }
+
+#informations_block_left_2 {
+
+	padding-top: 15px;
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.block .products-block li .products-block-image {
