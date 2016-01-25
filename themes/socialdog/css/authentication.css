@@ -30,4 +30,48 @@
   display: inline-block;
   max-width: 271px; }
 
+
+div.radio-inline{
+  width: 120px;
+  padding-top: 15px;
+  padding-bottom:15px;
+}
+  div.radio-inline > label{
+    float: left;
+    width: 50px;
+    display: block;
+  }
+  div.radio-inline > label.top{
+    float: left;
+    position: relative;
+    display: block;
+    width: 50px;
+  }
+  div.radio-inline > label.top>#uniform-id_gender2,div.radio-inline > label.top>#uniform-id_gender1{
+    float: left;
+    position: relative;
+    display: block;
+    padding-top:0px;
+    margin:0px;
+  }
+    div.radio-inline > label.top > .radio > span > input#id_gender1,div.radio-inline > label.top > .radio > span > input#id_gender2{
+      width: 50px;
+      float: left;
+      padding-top: 0px;
+      position: relative;
+      display:block;
+      height: 20px;
+      margin-top: 0px;
+      padding: 0px !important;
+      margin: 0px;
+    } 
+
+    .submit.clearfix {
+
+      width: 30%;
+      float: right;
+    }
+
+  
+
 /*# sourceMappingURL=authentication.css.map */
