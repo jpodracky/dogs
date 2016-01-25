@@ -7,13 +7,15 @@
 
 class SocialUserProfileModel extends ObjectModel
 {
-	private $sql;
-
-	private $customer;
-
 	const LEFT_COLUMN = 0;
 	const RIGHT_COLUMN = 1;
 	const FOOTER = 2;
+
+	protected $sql;
+
+	protected $_customer;	
+
+	protected static $_customerHasAddress = array();
 
 	/**
 	 * @see ObjectModel::$definition
@@ -30,14 +32,59 @@ class SocialUserProfileModel extends ObjectModel
 		),
 	);
 
+	/**
+     * Return Customer data
+     *
+     * @param int $id_customer Customer ID
+     * @return array Customer
+     */
 	public static function loadCustomerData($id_customer)
 	{
-		$customer = new Customer((int)$id_customer);
-		if (!Validate::isLoadedObject($customer))
-			die (Tools::displayError());
+		if (isset($id_customer))
+		{
+			$_customer = new Customer((int)$id_customer);
+			if (!Validate::isLoadedObject($_customer))
+				die (Tools::displayError());
 
-		return $customer;
+			return $_customer;
+		}
+		return false;
 	}
+
+	/**
+     * Return customer addresses
+     *
+     * @param int $id_customer Customer ID, int $id_address Address ID, int $id_lang Language ID
+     * @return array Addresses
+     */
+	public static function loadAdressesData($id_customer, $id_address, $id_lang)
+	{
+		if (isset($id_customer) && isset($id_address) && isset($id_lang))
+		{
+			$_customer = new Customer((int)$id_customer);
+			if (Validate::isLoadedObject($_customer) && $_customer->customerHasAddress($id_customer, $id_address))
+			{
+				return $_customer->getAddresses($id_lang);
+			} 
+		}
+		return false;
+	}
+
+	/**
+     * ID valid addresses for a customer
+     *
+     * @param int $id_customer Customer ID
+     * @return int id_addresses of valid adress
+     */
+    public static function getAddressesByCustomerId($id_customer)
+    {
+        return Db::getInstance(_PS_USE_SQL_SLAVE_)->getValue('
+			SELECT `id_address`
+			FROM `'._DB_PREFIX_.'address`
+			WHERE `id_customer` = '.(int)$id_customer.'
+			AND `deleted` = 0'
+        );
+    }
 
 	public static function createTables()
 	{

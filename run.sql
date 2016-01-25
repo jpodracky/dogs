@@ -189,6 +189,17 @@ AND cl.`id_lang` = 2
 AND c.`active` = 1
 ORDER BY `date_event` DESC;
 
+show tables like '%image%';
+select * from dog_product_attribute_image;
+select * from dog_image_type;
+select * from dog_image_shop;
 
-            
+select * from dog_customer;
+select * from dog_address;
+select * from dog_lang;
+select * from dog_cms_block;
+select * from dog_country_lang;
+-- insert into dog_country_lang 
+select x.`id_country`, 2, x.`name` from dog_country_lang x;
 
+select * from id_country;
