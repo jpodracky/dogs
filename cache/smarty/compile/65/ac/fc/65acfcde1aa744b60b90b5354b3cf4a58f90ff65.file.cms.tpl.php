@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:09:11
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/cms.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:60784604456957987a73eb0-02881690%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
 <?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:21
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/cms.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13938203225682836dbad199-21997956%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,11 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '60784604456957987a73eb0-02881690',
-=======
   'nocache_hash' => '13938203225682836dbad199-21997956',
->>>>>>> master
   'function' => 
   array (
   ),
@@ -40,15 +30,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_56957987c20ad2_85891016',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56957987c20ad2_85891016')) {function content_56957987c20ad2_85891016($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/modifier.date_format.php';
-=======
   'unifunc' => 'content_5682836e2ab3f4_32727733',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5682836e2ab3f4_32727733')) {function content_5682836e2ab3f4_32727733($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/modifier.date_format.php';
->>>>>>> master
 ?>
 <?php if (isset($_smarty_tpl->tpl_vars['cms']->value)&&!isset($_smarty_tpl->tpl_vars['cms_category']->value)) {?>
 	<?php if (!$_smarty_tpl->tpl_vars['cms']->value->active) {?>

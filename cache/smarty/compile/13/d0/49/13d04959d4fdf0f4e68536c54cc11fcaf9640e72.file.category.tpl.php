@@ -1,27 +1,17 @@
-<<<<<<< HEAD
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-12 23:03:35
-         compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/category.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:207418268156957837cdca61-30972012%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-=======
 <?php /* Smarty version Smarty-3.1.19, created on 2015-12-29 13:58:13
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/category.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10286246756828365eebfe5-62245365%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
->>>>>>> master
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '13d04959d4fdf0f4e68536c54cc11fcaf9640e72' => 
     array (
       0 => '/Users/Lubko/Documents/Local/dogs/themes/socialdog/category.tpl',
-      1 => 1451395075,
+      1 => 1448230187,
       2 => 'file',
     ),
   ),
-<<<<<<< HEAD
-  'nocache_hash' => '207418268156957837cdca61-30972012',
-=======
   'nocache_hash' => '10286246756828365eebfe5-62245365',
->>>>>>> master
   'function' => 
   array (
   ),
@@ -43,15 +33,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-<<<<<<< HEAD
-  'unifunc' => 'content_56957837ea4353_99676412',
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56957837ea4353_99676412')) {function content_56957837ea4353_99676412($_smarty_tpl) {?>
-=======
   'unifunc' => 'content_5682836649e291_95509900',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5682836649e291_95509900')) {function content_5682836649e291_95509900($_smarty_tpl) {?>
->>>>>>> master
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./errors.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['category']->value)) {?>
@@ -82,8 +66,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </div>
 				<?php } else { ?>
                     <!-- Category image -->
-                    <div class="content_scene_cat_bg"<?php if ($_smarty_tpl->tpl_vars['category']->value->id_image) {?> <!-- style="background:url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getCatImageLink($_smarty_tpl->tpl_vars['category']->value->link_rewrite,$_smarty_tpl->tpl_vars['category']->value->id_image,'category_default'), ENT_QUOTES, 'UTF-8', true);?>
-) right center no-repeat;--> min-height:<?php echo $_smarty_tpl->tpl_vars['categorySize']->value['height'];?>
+                    <div class="content_scene_cat_bg"<?php if ($_smarty_tpl->tpl_vars['category']->value->id_image) {?> style="background:url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getCatImageLink($_smarty_tpl->tpl_vars['category']->value->link_rewrite,$_smarty_tpl->tpl_vars['category']->value->id_image,'category_default'), ENT_QUOTES, 'UTF-8', true);?>
+) right center no-repeat; background-size:cover; min-height:<?php echo $_smarty_tpl->tpl_vars['categorySize']->value['height'];?>
 px;"<?php }?>>
                         <?php if ($_smarty_tpl->tpl_vars['category']->value->description) {?>
                             <div class="cat_desc">

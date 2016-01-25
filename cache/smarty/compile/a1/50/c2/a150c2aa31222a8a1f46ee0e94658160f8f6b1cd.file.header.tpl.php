@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:54:11
+<?php /* Smarty version Smarty-3.1.19, created on 2016-01-24 22:56:54
          compiled from "/Users/Lubko/Documents/Local/dogs/themes/socialdog/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:135998077756a54803f37358-33931772%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:30769556956a548a6c2e540-75379309%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a150c2aa31222a8a1f46ee0e94658160f8f6b1cd' => 
     array (
       0 => '/Users/Lubko/Documents/Local/dogs/themes/socialdog/header.tpl',
-      1 => 1453671569,
+      1 => 1453672541,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '135998077756a54803f37358-33931772',
+  'nocache_hash' => '30769556956a548a6c2e540-75379309',
   'function' => 
   array (
   ),
@@ -50,17 +50,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOOK_TOP' => 0,
     'logged' => 0,
     'link' => 0,
-    'category' => 0,
     'left_column_size' => 0,
     'HOOK_LEFT_COLUMN' => 0,
     'right_column_size' => 0,
     'cols' => 0,
+    'category' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_56a5480435aa43_03160281',
+  'unifunc' => 'content_56a548a7007eb2_01649023',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_56a5480435aa43_03160281')) {function content_56a5480435aa43_03160281($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_56a548a7007eb2_01649023')) {function content_56a548a7007eb2_01649023($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/Lubko/Documents/Local/dogs/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -242,9 +242,7 @@ logo.png" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop_name']->
 
 				</header>
 			</div>
-			<div class="columns-container <?php if (($_smarty_tpl->tpl_vars['category']->value->level_depth=='3')) {?><?php echo 'catdesc';?>
-<?php } else { ?><?php echo '';?>
-<?php }?>">
+			<div class="columns-container">
 				<div id="columns" class="container"> <!-- <?php if (($_smarty_tpl->tpl_vars['page_name']->value=='index')||($_smarty_tpl->tpl_vars['page_name']->value=='authentication')) {?><?php echo '';?>
 <?php } else { ?><?php echo ' bg-white';?>
 <?php }?> -->
@@ -273,14 +271,9 @@ if (!empty($_capture_buffer)) {
 </div>
 						<?php }?>
 						<?php if (isset($_smarty_tpl->tpl_vars['left_column_size']->value)&&isset($_smarty_tpl->tpl_vars['right_column_size']->value)) {?><?php $_smarty_tpl->tpl_vars['cols'] = new Smarty_variable((12-$_smarty_tpl->tpl_vars['left_column_size']->value-$_smarty_tpl->tpl_vars['right_column_size']->value), null, 0);?><?php } else { ?><?php $_smarty_tpl->tpl_vars['cols'] = new Smarty_variable(12, null, 0);?><?php }?>
-<<<<<<< HEAD
-						<div id="center_column" class="center_column col-xs-12 col-sm-<?php echo intval($_smarty_tpl->tpl_vars['cols']->value);?>
-">
-=======
 						<div id="center_column" class="center_column col-xs-12 col-sm-<?php echo intval($_smarty_tpl->tpl_vars['cols']->value);?>
 <?php if (isset($_smarty_tpl->tpl_vars['category']->value)&&($_smarty_tpl->tpl_vars['category']->value->level_depth=='3')) {?><?php echo ' catdesc';?>
 <?php } else { ?><?php echo '';?>
 <?php }?>">
->>>>>>> master
 	<?php }?>
 <?php }} ?>
