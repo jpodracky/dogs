@@ -3,3 +3,85 @@
 .trida {
 	background-color: #000;
 }
+
+
+.settings.blockshadow {
+
+	background:#ffffff;
+	padding: 0px;
+	margin: 0px;
+
+}
+	.settingtitle {
+		background: #f2f2f2;
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-top: 15px;
+		padding-left:15px;
+		padding-bottom: 15px;
+		border-bottom: solid 1px #d3d8db;
+		
+	}
+	.settingsmenu {
+
+		
+	}
+		.settingsmenu li {
+
+			padding-top: 10px;
+		}
+
+		.settingsmenu li.activelink{
+			font-weight: bold;
+
+		}
+
+		.settingsmenu li:hover {
+
+			cursor: pointer;
+		}
+
+	.settingcontent {
+
+		border-left: solid 1px #d3d8db;
+		padding-left: 10px;
+	}
+
+		.personalinfo,.useraddress {
+
+			padding-left : 20px;
+		}
+
+
+{* Docačasne *}
+.form-horizontal .control-label {
+
+	text-align:left;
+}
+.form-horizontal .form-group {
+
+	margin-right: 0px;
+}
+.form-group {
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 15px;
+	margin-left:5px;
+	margin-right: 20px;
+}
+
+.safebutton {
+
+	border-radius: 15px;
+	background: #63b744;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	border: 0px;
+	float:right;
+}
+
+#uniform-days>span,#uniform-months>span,#uniform-years>span{
+
+	display:none;
+}
