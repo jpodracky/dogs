@@ -26,7 +26,7 @@
                     </div>
 				{else}
                     <!-- Category image -->
-                    <div class="content_scene_cat_bg"{if $category->id_image} style="background:url({$link->getCatImageLink($category->link_rewrite, $category->id_image, 'category_default')|escape:'html':'UTF-8'}) right center no-repeat; background-size:cover; min-height:{$categorySize.height}px;"{/if}>
+                    <div class="content_scene_cat_bg"{if $category->id_image} <!-- style="background:url({$link->getCatImageLink($category->link_rewrite, $category->id_image, 'category_default')|escape:'html':'UTF-8'}) right center no-repeat;--> min-height:{$categorySize.height}px;"{/if}>
                         {if $category->description}
                             <div class="cat_desc">
                             <span class="category-name">
