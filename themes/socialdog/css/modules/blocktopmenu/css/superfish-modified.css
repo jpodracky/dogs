@@ -27,11 +27,12 @@
 .sf-menu ul {
   position: absolute;
   top: -999em;
-  background-color: rgba(191, 191, 191, 0.5);
+  /*background-color: rgba(191, 191, 191, 0.5);*/
   /* filter: alpha(opacity=50); */ /* IE */
   /* -moz-opacity: 0.5; */ /* Mozilla */
   /* opacity: 0.5; */ /* CSS3 */ 
-  border-radius: 15px;
+  border-radius: 0px ;
+  background: #2b2b2b;
 }
   @media (max-width: 767px) {
     .sf-menu ul {
@@ -92,9 +93,7 @@
     content: " ";
     position: absolute;
     bottom: -27px;
-    border: 25px solid transparent;
     margin-left: 30px;
-    border-bottom-color: rgba(191, 191, 191, 0.5);
     display: block;
     width: 0;
     height: 0;
@@ -123,7 +122,7 @@
 .sf-menu li ul {
   display: none;
   left: 0;
-  top: 89px; /* 59px before */
+  top: 69px; /* 59px before */
   /* match top ul list item height */
   z-index: 99;
   padding: 12px 0px 18px 0px;

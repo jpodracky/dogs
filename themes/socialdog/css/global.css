@@ -21,7 +21,7 @@ time, mark, audio, video {
 }
 
 html {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 13px/16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1; 
 }
 
@@ -141,7 +141,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	min-height: 1000px;
 	display: block;
 	position: relative;
-	background-color: #EFF1F2;
+	background-color: #E9E9E9;
 }
 
 #page_global .rte {
@@ -606,8 +606,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .news-panel {
-	border: solid 1px #d3d8db;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	margin-top: 25px;
 	display: block;
 	border-radius: 3px;
@@ -701,7 +700,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .news-content {
 	padding: 8px;
 	min-height: 130px;
-	border-bottom: solid 1px #d3d8db;
+	border-bottom: solid 1px #e2e2e2;
 }
 
 .news-content p {
@@ -764,7 +763,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .block.bg-white.blockshadow {
 
-	background:	#F2F2F2;
+	background:	#FFFFFF;
 } 
 
 .blockzeromargin {
@@ -772,8 +771,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .blockshadow {
-	border: solid 1px #d3d8db;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	/*border: solid 1px #d3d8db;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);*/
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	border-radius: 3px;
 }
 
@@ -793,11 +793,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	font: 600 18px/22px "Open Sans", sans-serif;
 	color: #555454;
 	/*background: #f6f6f6;*/
-	background: #fff;
+	background:#f6f6f6;
 	/*border-bottom: 5px solid #46a74e;*/
 	text-transform: uppercase;
 	padding: 10px 5px 10px 20px;
 	margin: 0px 0px 0px 0; 
+
+	border-bottom: 1px solid #e7e7e7;
+	box-shadow: 0 2PX 0 #fff;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -899,22 +902,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .block .list-block .news-block li {
 	display: block;	
-	height: 60px;
+	height: 80px;
 	margin: 0;
 	padding: 0;
+	border-bottom: 1px solid #ededed;
 }
 
 .block .list-block .news-block li .future-date-event {
 	position: relative;
-	width: 40px;
-	height: 60px;
+	width: 60px;
+	height:80px;
+	padding-top:9px;
 	left: 0;
 	top: 0;
 	color: #fff;
-	background-color: #222;
-	filter: alpha(opacity=80); /* IE */
-	-moz-opacity: 0.8; /* Mozilla */
-   	opacity: 0.8; /* CSS3 */
+	background-color: #434241;
+	filter: alpha(opacity=100); /* IE */
+	-moz-opacity: 1; /* Mozilla */
+   	opacity: 1; /* CSS3 */
    	float: left;
 }
 
@@ -939,8 +944,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .block .list-block .news-block li a {
-	line-height: 3.5em;
-	color: #62B645;
+	/*line-height: 3.5em;
+	color: #62B645;*/
+	line-height: 3em;
+	padding-top: 3px;
+	color: #353535;
+	font-size: 13px;
+	font-weight: bold;
+	/* border-bottom: 1px solid #63b744; */
+	text-align: center;
+	margin-left: 1px;
+	text-transform: uppercase;
+	padding-left: 0px;
+	left: 0px;
+	width: auto;
 }
 
 .block .list-block .news-block li a:before {
