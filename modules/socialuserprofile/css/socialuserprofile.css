@@ -13,13 +13,13 @@
 
 }
 	.settingtitle {
-		background: #f2f2f2;
+		background: #f6f6f6;
 		padding-top: 0px;
 		margin-top: 0px;
 		padding-top: 15px;
 		padding-left:15px;
 		padding-bottom: 15px;
-		border-bottom: solid 1px #d3d8db;
+		border-bottom: 1px solid #e7e7e7;
 		
 	}
 	.settingsmenu {
@@ -29,9 +29,11 @@
 		.settingsmenu li {
 
 			padding-top: 10px;
+			border-bottom: 1px solid #ededed;
 		}
 
 		.settingsmenu li.activelink{
+			border-left: 2px solid #1769ff;
 			font-weight: bold;
 
 		}
@@ -39,18 +41,125 @@
 		.settingsmenu li:hover {
 
 			cursor: pointer;
+			background: #fafafa;
+			text-decoration: none;
 		}
+
+			.settingsmenu li a {
+
+				border-left: 2px solid transparent;
+				color: #333;
+				display: block;
+				height: 45px;
+				line-height: 45px;
+				overflow: hidden;
+				padding: 0 15px;
+				white-space: nowrap;
+				font-size: 15px;
+			}
+
+				.settingsmenu li a:hover {
+					text-decoration: none;
+
+				}
+
+				.settingsmenu li.activelink a {
+
+					color: #1769ff;
+				}
 
 	.settingcontent {
 
-		border-left: solid 1px #d3d8db;
+		border-left: solid 1px #e2e2e2;
 		padding-left: 10px;
 	}
+
 
 		.personalinfo,.useraddress {
 
 			padding-left : 20px;
 		}
+
+		.settingcontent .control-label {
+
+
+			font-size: 13px;
+			/* font-weight: bold; */
+			/* color: #555; */
+			color: #888;
+			display: block;
+			font-weight: bold;
+			
+		}
+
+		.settingcontent .form-control {
+
+			background: #fff;
+			border-color: #cfcfcf;
+			border-radius: 3px;
+			box-shadow: 0 4px 5px -5px rgba(0, 0, 0, 0.3) inset;
+			font-size: 13px;
+			font-weight: normal;
+			height: 34px;
+			line-height: normal;
+			padding: 0 10px;
+		}
+
+.myaccount-link-list li {
+
+	padding-top: 10px;
+	border-bottom: 1px solid #ededed;
+
+}
+
+	.myaccount-link-list li a{
+
+		border-left: 2px solid transparent;
+		color: #333;
+		display: block;
+		height: 45px;
+		line-height: 45px;
+		overflow: hidden;
+		padding: 0 15px;
+		white-space: nowrap;
+		font-size: 15px;
+
+	}
+
+
+.informations_block_left.blockzeromargin:nth-child(2n) {
+
+background: #ffffff;
+/* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+/* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f7f7f7));
+/* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+/* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+/* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 0%, #f7f7f7 100%);
+/* IE10+ */
+background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+/* W3C */
+
+
+}
+
+
+.informations_block_left.blockzeromargin:nth-child(2n) .future-date-event{
+
+	background-color: #353535 !important;
+}
+
+/*
+h4.title_block.events{
+
+	background: url("/dogs/img/location.png") 23px center no-repeat;
+	padding: 10px 5px 10px 60px;
+}*/
+
 
 
 {* Docačasne *}
@@ -68,17 +177,32 @@
 	margin-left:5px;
 	margin-right: 20px;
 }
+.submit.clearfix{
+
+
+	width: 100%;
+	/*background: #f6f6f6;*/
+	padding: 10px;
+	margin-top: 20px;
+}
 
 .safebutton {
 
-	border-radius: 15px;
-	background: #63b744;
+	border-radius: 3px;
+	/*background: #63b744;*/
 	padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #fff;
-	border: 0px;
-	float:right;
+	/*color: #fff;*/
+	border: 1px solid #eeeeee;
+	float: right; 
+	margin: 0 auto;
+	left: 0;
+	right 0;
+	width: 150px;
+	position: relative;
+	display: block;
+	font-size: 13px;
 }
 
 #uniform-days>span,#uniform-months>span,#uniform-years>span{

@@ -64,7 +64,7 @@
 						</div>
 						<div class="news-content">
 							<p>
-								{$cmspages.meta_description}...
+								{$cmspages.meta_description}
 								<a class="news-read-more" href="{$link->getCMSLink($cmspages.id_cms, $cmspages.link_rewrite)|escape:'html':'UTF-8'}">{l s='Read more'}</a>
 							</p>	
 						</div>

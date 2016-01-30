@@ -9,7 +9,7 @@
 {if $block == 1}
 	<!-- Block CMS module -->
 	<div class="block bg-white blockshadow">
-		<h4 class="title_block">{l s='Future Event' mod='blockcms'}</h4>
+		<h4 class="title_block events">{l s='Future Event' mod='blockcms'}</h4>
 	{foreach from=$cms_titles key=cms_key item=cms_page}
 		<section id="informations_block_left_{$cms_key}" class="informations_block_left blockzeromargin">
 			<!--
@@ -31,6 +31,9 @@
 							<a href="{$cms_page.cms_link|escape:'html':'UTF-8'}" title="{$cms_page.meta_title|escape:'html':'UTF-8'}">
 								{$cms_page.meta_title|escape:'html':'UTF-8'}
 							</a>
+							<p>
+								<!--{$cms_page.meta_description}-->
+							</p>
 						</li>
 					{/if}
 				<!--
