@@ -1,0 +1,76 @@
+/* css Social User Header */
+
+.header_user {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 300px;
+	display: block;
+}
+
+.header_user_bck {
+	background-attachment: scroll;
+    background-image: url('../../../img/user/1/1.png');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;   
+}
+
+.header_user_position {
+	left: 0;
+	top: 0;
+	position: relative;
+}
+
+.upload-demo #upload-demo,
+.upload-demo .upload-result,
+.upload-demo.ready .upload-msg {
+    display: none;
+}
+
+.upload-demo.ready #upload-demo {
+    display: block;
+}
+
+.upload-demo.ready .upload-result {
+    display: inline-block;    
+}
+
+.upload-msg {
+    text-align: center;
+    padding: 50px;
+    font-size: 22px;
+    color: #aaa;
+    width: 260px;
+    margin: 50px auto;
+    border: 1px solid #aaa;
+}
+
+.actions {
+    position: absolute;
+}
+
+.upload-file, 
+.upload-result, 
+.upload-end {
+    background-color: #189094;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: none;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+}
+
+#imagemsg {
+	
+}
