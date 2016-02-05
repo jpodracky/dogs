@@ -6,6 +6,10 @@
 	width: 100%;
 	height: 300px;
 	display: block;
+	border-bottom: solid 1px #bbb;
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header_user_bck {
@@ -20,13 +24,13 @@
 }
 
 .header_user_position {
-	left: 0;
-	top: 0;
-	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 .upload-demo #upload-demo,
 .upload-demo .upload-result,
+.upload-demo .upload-end,
 .upload-demo.ready .upload-msg {
     display: none;
 }
@@ -35,42 +39,62 @@
     display: block;
 }
 
-.upload-demo.ready .upload-result {
+.upload-demo.ready .upload-result,
+.upload-demo.ready .upload-end {
     display: inline-block;    
 }
 
-.upload-msg {
-    text-align: center;
-    padding: 50px;
-    font-size: 22px;
-    color: #aaa;
-    width: 260px;
-    margin: 50px auto;
-    border: 1px solid #aaa;
-}
-
-.actions {
-    position: absolute;
-}
-
-.upload-file, 
 .upload-result, 
 .upload-end {
-    background-color: #189094;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0); /* transparent color */
+    color: #333;
+    margin: 7px;
+    padding: 5px 10px;
+    border-radius: 5px; 
+    border: 1px solid #333;
+    font-size: 14px;
     cursor: pointer;
     text-decoration: none;
     text-shadow: none;
     display: inline-block;
-    cursor: pointer;
-    position: absolute;
+    position: relative;
+    float: left;
     z-index: 99;
 }
 
-#imagemsg {
-	
+.upload-result:hover, 
+.upload-end:hover {
+	color: #fff;
+	border-color: #fff;
+}
+
+.actions-btn {
+	top: 240px;
+    position: absolute;
+}
+
+.upload-file {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	z-index: 99;
+}
+
+.upload-file::-webkit-file-upload-button {
+	visibility: hidden;
+}  
+
+.upload-file::before {
+	padding: 12px 10px 10px 10px;
+	display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 20px;
+    content: "\f030";
+    cursor: pointer;
+}
+
+.upload-file:hover::before {
+	color: white;
 }

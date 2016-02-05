@@ -47,7 +47,7 @@ class SocialUserHeaderModel extends ObjectModel
 	protected $img_max_size = null;
 
 	/** @var object Error */
-	protected $error = array();
+	protected $errors = array();
 
 	/**
 	 * @see ObjectModel::$definition
@@ -130,7 +130,7 @@ class SocialUserHeaderModel extends ObjectModel
             $max_size = isset($this->img_max_size) ? $this->img_max_size : 0;
 
             if ($error = ImageManager::validateUpload($_FILES[$name], Tools::getMaxUploadSize($max_size))) {
-                $this->_errors[] = $error;
+                $this->errors[] = $error;
             } elseif (!($tmpName = tempnam(_PS_TMP_IMG_DIR_, 'PS')) || !move_uploaded_file($_FILES[$name]['tmp_name'], $tmpName)) {
                 return false;
             } 
@@ -139,9 +139,9 @@ class SocialUserHeaderModel extends ObjectModel
                 $_FILES[$name]['tmp_name'] = $tmpName;
                 // Copy new image
                 if (!ImageManager::resize($tmpName, _PS_USER_IMG_DIR_.$dir.'/'.$id.'.'.$this->image_format, (int)$width, (int)$height, ($ext ? $ext : $this->image_format))) {
-                    $this->_errors[] = Tools::displayError('An error occurred while uploading image.');
+                    $this->errors[] = Tools::displayError('An error occurred while uploading image.');
                 }
-                if (count($this->_errors)) {
+                if (count($this->errors)) {
                     return false;
                 }
                 else

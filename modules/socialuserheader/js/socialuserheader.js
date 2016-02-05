@@ -10,6 +10,8 @@ $("document").ready(function(){
 
 			var $output;
 
+			var $path;
+
 			function readFile(input) {
 	 			if (input.files && input.files[0]) {
 		            var reader = new FileReader();
@@ -34,6 +36,12 @@ $("document").ready(function(){
 			// upload file and display data html/canvas
 			$('#uploadFile').on('change', function () { 
 				
+				if(typeof($uploadCrop) != "undefined" && $uploadCrop !== null) {
+    				if ($uploadCrop.croppie('destroy')) {
+						$('.upload-demo').removeClass('ready');
+					}
+				}
+
 				// set object
 				$uploadCrop = $('#upload-demo').croppie({
 					viewport: {
@@ -50,8 +58,6 @@ $("document").ready(function(){
 
 				// load inage file
 				readFile(this);
-
-				$('#imagemsg').hide();
 
 			});
 
@@ -80,6 +86,8 @@ $("document").ready(function(){
 	                fd.append("userId", "Croppie") // like a hidden input
 	                fd.append("id_customer", $('#id_customer').val())
 
+	                $path = "../img/user/" + $('#id_customer').val() + "/" + $('#id_customer').val() + ".png?t=" + new Date().getTime()
+
 	                $.ajax({
 	                    //url: window.location.pathname, // window.location.href;
 	                    type: "POST", // required
@@ -91,18 +99,24 @@ $("document").ready(function(){
 	                    success: function(isUploaded) {
 	                        //$(".upload-msg").html(data)
 	                        //$('#imagemsg').show();
+
+	                        if ($path !== null)
+	                        	$(".header_user_bck").replaceWith( $(".header_user_bck").css("background-image", "url('" + $path + "')").clone(true) );
+
+	                        $( ".upload-end" ).trigger( "click" );
+
 	                        $.fancybox.open([{
 								type: 'inline',
 								autoScale: true,
 								minHeight: 30,
-								content: '<p class="fancybox-error">' + isUploaded + '</p>'
+								content: '<p class="fancybox-error">' + isUploaded + $path + '</p>'
 							}], {
 								padding: 0
 							});
+
 	                        console.log("Uploaded.", arguments)
 	                    },
 	                    error: function() {
-	                    	$('#imagemsg').hide();
 	                        console.log("Error Uploading.", arguments)
 	                    }
 	                })
@@ -116,13 +130,16 @@ $("document").ready(function(){
 				if ($uploadCrop.croppie('destroy')) {
 					$("#uploadFile").replaceWith($("#uploadFile").val('').clone(true));
 					$('.upload-demo').removeClass('ready');
-					$('#imagemsg').hide();
 				}
 			});
 		}
 
 		function init() {
 			userImgUpload();
+
+			// disabled uniform plugin to input element with class .upload-file => 15-jquery.uniform-modified.js
+			//if ($.prototype.uniform) 
+			//	$("input[type='file']:not(.upload-file)").uniform();
 		}
 
 		return {
