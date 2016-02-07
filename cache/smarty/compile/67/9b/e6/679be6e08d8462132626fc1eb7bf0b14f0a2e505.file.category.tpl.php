@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-17 12:18:25
+<?php /* Smarty version Smarty-3.1.19, created on 2016-02-04 21:52:25
          compiled from "/Users/jpodracky/_WWW/dogs/themes/socialdog/category.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1586244937569b7881af4a80-28043625%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:65956298656b3ba09c90679-08635477%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '679be6e08d8462132626fc1eb7bf0b14f0a2e505' => 
     array (
       0 => '/Users/jpodracky/_WWW/dogs/themes/socialdog/category.tpl',
-      1 => 1449496612,
+      1 => 1453727680,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1586244937569b7881af4a80-28043625',
+  'nocache_hash' => '65956298656b3ba09c90679-08635477',
   'function' => 
   array (
   ),
@@ -33,9 +33,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_569b7881c9cc75_70450341',
+  'unifunc' => 'content_56b3ba09e20960_01096276',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_569b7881c9cc75_70450341')) {function content_569b7881c9cc75_70450341($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56b3ba09e20960_01096276')) {function content_56b3ba09e20960_01096276($_smarty_tpl) {?>
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./errors.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['category']->value)) {?>
@@ -66,8 +66,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </div>
 				<?php } else { ?>
                     <!-- Category image -->
-                    <div class="content_scene_cat_bg"<?php if ($_smarty_tpl->tpl_vars['category']->value->id_image) {?> style="background:url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getCatImageLink($_smarty_tpl->tpl_vars['category']->value->link_rewrite,$_smarty_tpl->tpl_vars['category']->value->id_image,'category_default'), ENT_QUOTES, 'UTF-8', true);?>
-) right center no-repeat; background-size:cover; min-height:<?php echo $_smarty_tpl->tpl_vars['categorySize']->value['height'];?>
+                    <div class="content_scene_cat_bg"<?php if ($_smarty_tpl->tpl_vars['category']->value->id_image) {?> <!-- style="background:url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getCatImageLink($_smarty_tpl->tpl_vars['category']->value->link_rewrite,$_smarty_tpl->tpl_vars['category']->value->id_image,'category_default'), ENT_QUOTES, 'UTF-8', true);?>
+) right center no-repeat;--> min-height:<?php echo $_smarty_tpl->tpl_vars['categorySize']->value['height'];?>
 px;"<?php }?>>
                         <?php if ($_smarty_tpl->tpl_vars['category']->value->description) {?>
                             <div class="cat_desc">

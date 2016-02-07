@@ -1,0 +1,100 @@
+/* css Social User Header */
+
+.header_user {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 300px;
+	display: block;
+	border-bottom: solid 1px #bbb;
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header_user_bck {
+	background-attachment: scroll;
+    background-image: url('../../../img/user/1/1.png');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;   
+}
+
+.header_user_position {
+	margin: 0;
+	padding: 0;
+}
+
+.upload-demo #upload-demo,
+.upload-demo .upload-result,
+.upload-demo .upload-end,
+.upload-demo.ready .upload-msg {
+    display: none;
+}
+
+.upload-demo.ready #upload-demo {
+    display: block;
+}
+
+.upload-demo.ready .upload-result,
+.upload-demo.ready .upload-end {
+    display: inline-block;    
+}
+
+.upload-result, 
+.upload-end {
+    background-color: rgba(0, 0, 0, 0); /* transparent color */
+    color: #333;
+    margin: 7px;
+    padding: 5px 10px;
+    border-radius: 5px; 
+    border: 1px solid #333;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: none;
+    display: inline-block;
+    position: relative;
+    float: left;
+    z-index: 99;
+}
+
+.upload-result:hover, 
+.upload-end:hover {
+	color: #fff;
+	border-color: #fff;
+}
+
+.actions-btn {
+	top: 240px;
+    position: absolute;
+}
+
+.upload-file {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	z-index: 99;
+}
+
+.upload-file::-webkit-file-upload-button {
+	visibility: hidden;
+}  
+
+.upload-file::before {
+	padding: 12px 10px 10px 10px;
+	display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 20px;
+    content: "\f030";
+    cursor: pointer;
+}
+
+.upload-file:hover::before {
+	color: white;
+}

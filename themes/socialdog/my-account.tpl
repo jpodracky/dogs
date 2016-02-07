@@ -5,7 +5,6 @@
  *}
 
 {capture name=path}{l s='My account'}{/capture}
-
 {*
 <h1 class="page-heading">{l s='My account'}</h1>
 *}

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2016-01-18 11:02:20
+<?php /* Smarty version Smarty-3.1.19, created on 2016-02-07 22:32:34
          compiled from "/Users/jpodracky/_WWW/dogs/themes/socialdog/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:829425911569cb82c661064-37188143%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:100375962656b7b7f225f166-62647082%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '27e1851ed055077d8cef6158fb769f8f6ff3ae18' => 
     array (
       0 => '/Users/jpodracky/_WWW/dogs/themes/socialdog/header.tpl',
-      1 => 1453110631,
+      1 => 1454133567,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '829425911569cb82c661064-37188143',
+  'nocache_hash' => '100375962656b7b7f225f166-62647082',
   'function' => 
   array (
   ),
@@ -50,17 +50,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOOK_TOP' => 0,
     'logged' => 0,
     'link' => 0,
+    'HOOK_CUSTOMER_ACCOUNT_HEADER' => 0,
+    'category' => 0,
     'left_column_size' => 0,
     'HOOK_LEFT_COLUMN' => 0,
     'right_column_size' => 0,
     'cols' => 0,
-    'category' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_569cb82cab1747_14202211',
+  'unifunc' => 'content_56b7b7f25c7866_77464793',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_569cb82cab1747_14202211')) {function content_569cb82cab1747_14202211($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/function.implode.php';
+<?php if ($_valid && !is_callable('content_56b7b7f25c7866_77464793')) {function content_56b7b7f25c7866_77464793($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include '/Users/jpodracky/_WWW/dogs/tools/smarty/plugins/function.implode.php';
 ?>
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"<?php if (isset($_smarty_tpl->tpl_vars['language_code']->value)&&$_smarty_tpl->tpl_vars['language_code']->value) {?> lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language_code']->value, ENT_QUOTES, 'UTF-8', true);?>
@@ -242,7 +243,13 @@ logo.png" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop_name']->
 
 				</header>
 			</div>
-			<div class="columns-container">
+			<!-- Hook module Social User Header, page_name=my-accout, visible after login  -->
+			<?php if ($_smarty_tpl->tpl_vars['page_name']->value=='my-account') {?>
+				<?php echo $_smarty_tpl->tpl_vars['HOOK_CUSTOMER_ACCOUNT_HEADER']->value;?>
+
+			<?php }?>
+			<div class="columns-container <?php if ($_smarty_tpl->tpl_vars['page_name']->value=='category') {?><?php if (($_smarty_tpl->tpl_vars['category']->value->level_depth=='3')) {?><?php echo 'catdesc';?>
+<?php }?><?php }?>">
 				<div id="columns" class="container"> <!-- <?php if (($_smarty_tpl->tpl_vars['page_name']->value=='index')||($_smarty_tpl->tpl_vars['page_name']->value=='authentication')) {?><?php echo '';?>
 <?php } else { ?><?php echo ' bg-white';?>
 <?php }?> -->
@@ -271,9 +278,10 @@ if (!empty($_capture_buffer)) {
 </div>
 						<?php }?>
 						<?php if (isset($_smarty_tpl->tpl_vars['left_column_size']->value)&&isset($_smarty_tpl->tpl_vars['right_column_size']->value)) {?><?php $_smarty_tpl->tpl_vars['cols'] = new Smarty_variable((12-$_smarty_tpl->tpl_vars['left_column_size']->value-$_smarty_tpl->tpl_vars['right_column_size']->value), null, 0);?><?php } else { ?><?php $_smarty_tpl->tpl_vars['cols'] = new Smarty_variable(12, null, 0);?><?php }?>
+						
 						<div id="center_column" class="center_column col-xs-12 col-sm-<?php echo intval($_smarty_tpl->tpl_vars['cols']->value);?>
-<?php if (isset($_smarty_tpl->tpl_vars['category']->value)&&($_smarty_tpl->tpl_vars['category']->value->level_depth=='3')) {?><?php echo ' catdesc';?>
-<?php } else { ?><?php echo '';?>
-<?php }?>">
+<?php if ($_smarty_tpl->tpl_vars['page_name']->value=='category') {?><?php if (isset($_smarty_tpl->tpl_vars['category']->value)&&($_smarty_tpl->tpl_vars['category']->value->level_depth=='3')) {?><?php echo ' catdesc';?>
+<?php }?><?php }?>">
+
 	<?php }?>
 <?php }} ?>

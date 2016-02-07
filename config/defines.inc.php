@@ -103,7 +103,7 @@ if (!defined('_PS_HOST_MODE_')) {
 }
 
 define('_PS_CAT_IMG_DIR_',           _PS_IMG_DIR_.'c/');
-define('_PS_COL_IMG_DIR_',             _PS_IMG_DIR_.'co/');
+define('_PS_COL_IMG_DIR_',           _PS_IMG_DIR_.'co/');
 define('_PS_EMPLOYEE_IMG_DIR_',      _PS_IMG_DIR_.'e/');
 define('_PS_GENDERS_DIR_',           _PS_IMG_DIR_.'genders/');
 define('_PS_LANG_IMG_DIR_',          _PS_IMG_DIR_.'l/');
@@ -116,6 +116,7 @@ define('_PS_SHIP_IMG_DIR_',          _PS_IMG_DIR_.'s/');
 define('_PS_STORE_IMG_DIR_',         _PS_IMG_DIR_.'st/');
 define('_PS_SUPP_IMG_DIR_',          _PS_IMG_DIR_.'su/');
 define('_PS_TMP_IMG_DIR_',           _PS_IMG_DIR_.'tmp/');
+define('_PS_USER_IMG_DIR_',          _PS_IMG_DIR_.'user/');
 
 /* settings php */
 define('_PS_TRANS_PATTERN_',            '(.*[^\\\\])');
