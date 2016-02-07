@@ -99,6 +99,8 @@ class SocialUserHeader extends Module
 			`id_customer` int(10) unsigned NOT NULL,
 			`position` smallint(2) unsigned NOT NULL DEFAULT \'0\',
 			`cover` tinyint(1) unsigned DEFAULT NULL,
+			`date_add` TIMESTAMP NOT NULL DEFAULT \'0000-00-00 00:00:00\',
+			`date_upd` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 			PRIMARY KEY (`id_image`),
 			UNIQUE KEY `id_customer_cover` (`id_customer`,`cover`),
 			UNIQUE KEY `idx_customer_image` (`id_image`,`id_customer`,`cover`),

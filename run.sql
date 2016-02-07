@@ -220,5 +220,6 @@ INNER JOIN `dog_hook` h ON ha.name = h.name;
 
 select * from dog_image;
 select * from dog_image_shop;
-select * from dog_configuration where name like '%MAX%';
+select * from dog_configuration where name like '%CACHE%';
+select * from dog_configuration where name like '%LEGACY_IMAGE%';
 

@@ -7,6 +7,8 @@
 
 class SocialUserHeaderModel extends ObjectModel
 {
+	public $id;
+
 	/** @var int Image ID */
     public $id_image;
 
@@ -19,7 +21,13 @@ class SocialUserHeaderModel extends ObjectModel
     /** @var bool Image is cover */
     public $cover;
 
-    /** @var string Legend */
+    /** @var dateTime Image add */
+    public $date_add;
+
+    /** @var dateTime Image update */
+    public $date_upd;
+
+    /** @var string Image legend */
     public $legend;
 
     /** @var string image extension */
@@ -59,21 +67,84 @@ class SocialUserHeaderModel extends ObjectModel
 			'id_image' =>       array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt', 'required' => true),
 			'id_customer' =>    array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt', 'required' => true),
 			'position' =>       array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt', 'required' => true),
-			'cover' =>      	array('type' => self::TYPE_INT, 'allow_null' => true, 'validate' => 'isUnsignedInt', 'required' => false)
+			'cover' =>      	array('type' => self::TYPE_INT, 'allow_null' => true, 'validate' => 'isUnsignedInt', 'required' => false),
+			'date_add' =>       array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
+            'date_upd' =>       array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
+
+            /* Lang fields */
+            'legend' =>     	array('type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isGenericName', 'size' => 128)
 		),
 	);
 
 	/**
 	 * Constructor
 	 */
-	public function __construct()
+	public function __construct($id = null, $id_lang = null)
 	{
 
-		parent::__construct();
+		parent::__construct($id, $id_lang);
 
 		$img_max_size = Configuration::get('PS_PRODUCT_PICTURE_MAX_SIZE');
 
 	}
+
+	/**
+     * @see ObjectModel::add()
+     */
+	public function add($autodate = true, $null_values = false)
+    {
+        if ($this->position <= 0) {
+            $this->position = Image::getHighestPosition($this->id_customer) + 1;
+        }
+
+        if ($this->cover) {
+            $this->cover = 1;
+        } else {
+            $this->cover = null;
+        }
+
+        return parent::add($autodate, $null_values);
+    }
+
+    /**
+     * @see ObjectModel::update()
+     */
+    public function update($null_values = false)
+    {
+        if ($this->cover) {
+            $this->cover = 1;
+        } else {
+            $this->cover = null;
+        }
+
+
+        return parent::update($null_values);
+    }
+
+    /**
+     * @see ObjectModel::delete()
+     */
+    public function delete()
+    {
+        if (!parent::delete()) {
+            return false;
+        }
+
+        if ($this->hasMultishopEntries()) {
+            return true;
+        }
+
+        if (!$this->deleteProductAttributeImage() || !$this->deleteImage()) {
+            return false;
+        }
+
+        // update positions
+        Db::getInstance()->execute('SET @position:=0', false);
+        Db::getInstance()->execute('UPDATE `'._DB_PREFIX_.'image_customer` SET position=(@position:=@position+1)
+									WHERE `id_customer` = '.(int)$this->id_customer.' ORDER BY position ASC');
+
+        return true;
+    }
 
 	/**
      * Return Customer data
@@ -81,42 +152,11 @@ class SocialUserHeaderModel extends ObjectModel
      * @param int $id_customer Customer ID
      * @return array Customer
      */
-	public static function loadCustomerData($id_customer)
-	{
-		if (isset($id_customer))
-		{
-			$_customer = new Customer((int)$id_customer);
-			if (!Validate::isLoadedObject($_customer))
-				die (Tools::displayError());
-
-			return $_customer;
-		}
-		return false;
-	}
-
-
-	/**
-     * Return customer addresses
-     *
-     * @param int $id_customer Customer ID, int $id_address Address ID, int $id_lang Language ID
-     * @return array Addresses
-     */
-	public static function loadAdressesData($id_customer, $id_address, $id_lang)
-	{
-		if (isset($id_customer) && isset($id_address) && isset($id_lang))
-		{
-			$_customer = new Customer((int)$id_customer);
-			if (Validate::isLoadedObject($_customer) && $_customer->customerHasAddress($id_customer, $id_address))
-			{
-				return $_customer->getAddresses($id_lang);
-			} 
-		}
-		return false;
-	}
-
-
 	public function uploadImage($id, $name, $dir, $ext = false, $width = null, $height = null)
     {
+        if (!$this->testFileSystem())
+        	return false;
+
         if (isset($_FILES[$name]['tmp_name']) && !empty($_FILES[$name]['tmp_name'])) {
             
             // Delete old image
@@ -360,7 +400,29 @@ class SocialUserHeaderModel extends ObjectModel
     }
 
     /**
-     * Move all legacy product image files from the image folder root to their subfolder in the new filesystem.
+     * Returns the path where a customer image should be created (without file format)
+     *
+     * @return string path
+     */
+    public function getPathForCreation()
+    {
+        if (!$this->id) {
+            return false;
+        }
+        if (Configuration::get('PS_LEGACY_IMAGES')) {
+            if (!$this->id_customer) {
+                return false;
+            }
+            $path = $this->id_customer;
+        } else {
+            $path = $this->getImgPath();
+            $this->createImgFolder();
+        }
+        return _PS_USER_IMG_DIR_.$path;
+    }
+
+    /**
+     * Move all legacy customer image files from the image folder root to their subfolder in the new filesystem.
      * If max_execution_time is provided, stops before timeout and returns string "timeout".
      * If any image cannot be moved, stops and returns "false"
      *
@@ -373,14 +435,14 @@ class SocialUserHeaderModel extends ObjectModel
         $image = null;
         $tmp_folder = 'duplicates/';
         foreach (scandir(_PS_USER_IMG_DIR_) as $file) {
-            // matches the base product image or the thumbnails
+            // matches the base customer image or the thumbnails
             if (preg_match('/^([0-9]+\-)([0-9]+)(\-(.*))?\.jpg$/', $file, $matches)) {
                 // don't recreate an image object for each image type
                 if (!$image || $image->id !== (int)$matches[2]) {
-                    $image = new Image((int)$matches[2]);
+                    $image = new SocialUserHeaderModel((int)$matches[2]);
                 }
                 // image exists in DB and with the correct product?
-                if (Validate::isLoadedObject($image) && $image->id_product == (int)rtrim($matches[1], '-')) {
+                if (Validate::isLoadedObject($image) && $image->id_image == (int)rtrim($matches[1], '-')) {
                     // create the new folder if it does not exist
                     if (!$image->createImgFolder()) {
                         return false;
@@ -447,27 +509,20 @@ class SocialUserHeaderModel extends ObjectModel
         return true;
     }
 
+
     /**
-     * Returns the path where a product image should be created (without file format)
+     * Return highest position of images for a customer
      *
-     * @return string path
+     * @param int $id_customer Customer ID
+     * @return int highest position of images
      */
-    public function getPathForCreation()
+    public static function getHighestPosition($id_customer)
     {
-        if (!$this->id) {
-            return false;
-        }
-        if (Configuration::get('PS_LEGACY_IMAGES')) {
-            if (!$this->id_product) {
-                return false;
-            }
-            $path = $this->id_product.'-'.$this->id;
-        } else {
-            $path = $this->getImgPath();
-            $this->createImgFolder();
-        }
-        return _PS_USER_IMG_DIR_.$path;
+        $result = Db::getInstance()->getRow('
+		SELECT MAX(`position`) AS max
+		FROM `'._DB_PREFIX_.'image_customer`
+		WHERE `id_customer` = '.(int)$id_customer);
+        return $result['max'];
     }
 		
-
 }
