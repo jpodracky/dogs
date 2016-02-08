@@ -1,0 +1,10 @@
+*ERROR* 	2016/01/29 - 09:07:03: Property Tab->name is empty at line 935 in file classes/ObjectModel.php
+*ERROR* 	2016/01/29 - 09:28:11: Property Tab->name is empty at line 935 in file classes/ObjectModel.php
+*ERROR* 	2016/01/29 - 09:30:15: Property Tab->name is empty at line 935 in file classes/ObjectModel.php
+*ERROR* 	2016/01/29 - 10:09:21: Duplicate entry '1' for key 'PRIMARY'<br /><br /><pre>INSERT INTO `dog_hook` 
+			 VALUES (1,'displayCustomerAccountHeader',
+			 	'Customer account Header displayed in Front Office',
+			 	'This hook displays new elements header on the customer account page',1,0)</pre> at line 772 in file classes/db/Db.php
+*ERROR* 	2016/01/29 - 10:11:47: Duplicate entry 'displayCustomerAccountHeader' for key 'hook_name'<br /><br /><pre>INSERT INTO `dog_hook` (`name`, `title`, `description`, `position`, `live_edit`) VALUES ('displayCustomerAccountHeader', 'displayCustomerAccountHeader', '', '1', '1')</pre> at line 772 in file classes/db/Db.php
+*ERROR* 	2016/01/29 - 10:16:59: Duplicate entry 'displayCustomerAccountHeader' for key 'hook_name'<br /><br /><pre>INSERT INTO `dog_hook` (`name`, `title`, `description`, `position`, `live_edit`) VALUES ('displayCustomerAccountHeader', 'displayCustomerAccountHeader', '', '1', '1')</pre> at line 772 in file classes/db/Db.php
+*ERROR* 	2016/01/29 - 10:30:12: Duplicate entry 'displayCustomerAccountHeader' for key 'hook_name'<br /><br /><pre>INSERT INTO `dog_hook` (`name`, `title`, `description`, `position`, `live_edit`) VALUES ('displayCustomerAccountHeader', 'displayCustomerAccountHeader', '', '1', '1')</pre> at line 772 in file classes/db/Db.php

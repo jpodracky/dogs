@@ -155,15 +155,19 @@ select * from dog_employee;
 
 select * from dog_category;
 
-select * from dog_hook;
+select * from dog_hook where name like '%Customer%';
+select * from dog_hook_alias where name like '%Customer%';
+select * from dog_hook_module where id_module = 85;
+select * from dog_hook where name like '%Header%';
 select * from dog_hook where name like '%Home%';
 select * from dog_hook_alias where alias like '%Home%';
 select * from dog_hook_alias where id_hook_alias = 8;
 select * from dog_hook_module where id_hook = 8;
 select * from dog_hook_alias where name = 'displayRightColumn';
-select * from dog_hook_module where id_module = 69;
+select * from dog_hook_module where id_module = 67;
 -- insert into dog_hook_module values (69, 1, 8, 15);
 select * from dog_module; -- id_module = 69 - social user profile
+select * from dog_module where name = 'socialuserheader'; -- 85
 
 select * from dog_module where name like '%cms%';
 
@@ -193,6 +197,7 @@ show tables like '%image%';
 select * from dog_product_attribute_image;
 select * from dog_image_type;
 select * from dog_image_shop;
+show tables like '%image%';
 
 select * from dog_customer;
 select * from dog_address;
@@ -203,3 +208,18 @@ select * from dog_country_lang;
 select x.`id_country`, 2, x.`name` from dog_country_lang x;
 
 select * from dog_country_lang;
+SELECT `id_hook`, `name`
+FROM `dog_hook`
+UNION
+SELECT `id_hook`, ha.`alias` as name
+FROM `dog_hook_alias` ha
+INNER JOIN `dog_hook` h ON ha.name = h.name;
+
+
+-- INSERT INTO `dogs`.`dog_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VALUES ('85', '1', '166', '1');
+
+select * from dog_image;
+select * from dog_image_shop;
+select * from dog_configuration where name like '%CACHE%';
+select * from dog_configuration where name like '%LEGACY_IMAGE%';
+
